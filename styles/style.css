@@ -4,9 +4,29 @@ body {
 }
 
 header, footer {
-    background-color: rgba(38, 114, 194, 0.852);
+    background-color: rgba(14, 73, 136, 0.852);
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px #6f7364;
 }
 header img {
     width: 200px;
     float: left;
+    margin: 30px;
+    margin-left: 50px;
+    box-shadow: 10px 10px 10px #6f7364;
+}
+header {
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+ h1, .copyright {
+    color: white;
+ }
+
+ h1 {
+    margin: 0 auto;
+    font-size: 100px;
+}
+.copyright, #modified {
+    text-align: center;
 }
