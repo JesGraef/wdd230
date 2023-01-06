@@ -9,4 +9,4 @@ document.getElementById("modified").innerHTML = fullDate;
 
 let currentDate = new Date()
 let currentYear = currentDate.getFullYear()
-document.getElementById('year').innerHTML = currentYear;
+document.querySelector('#year').innerHTML = currentYear;
