@@ -1,0 +1,66 @@
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+	
+}
+h1 {
+    font-family: 'Rowdies', Arial, sans-serif;
+	font-size: 80px;
+}
+h2 {
+    font-family: 'Poppins', Arial, sans-serif;
+	font-size: 50px;
+}
+header, footer {
+    background-color: rgba(1, 7, 12, 0.852);
+	color: white;
+    text-align: center;
+}	
+h3 {
+	background-color: rgba(5, 59, 116, 0.852);
+	color: white;
+	font-size: 30px;
+	margin-top: 0;
+}
+section {
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+img {
+	max-width: 200px;
+}
+/* Small view */
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 767px;
+	margin: 0;
+}
+main section {
+	margin: 0.5rem;
+	border: 1px solid #bbb;
+	padding: 0 1rem;
+	background-color: #eee;
+}
+img {
+	max-width: 200px;
+}
+/* Tablet View */
+@media only screen and (min-width: 37.5em) {
+	main {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	main section img {
+		display: block;
+	}
+}
+
+/* Desktop Views ****************************/
+@media only screen and (min-width: 60em) {
+	main {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	img {
+		max-width: 400px;
+	}
+}
