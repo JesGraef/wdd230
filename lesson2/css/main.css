@@ -26,6 +26,9 @@ h3 {
 p, a {
 	padding: 10px;
 }
+.white{
+	font-size: 28px;
+}
 section {
 	border-top-left-radius: 20px;
 	border-top-right-radius: 20px;	
@@ -38,13 +41,11 @@ main {
     display: grid;
     grid-template-columns: 1fr;
 	margin: 0 auto;
-	max-width: 767px;
 }
 main section {
 	margin: 0.5rem;
 	border: 1px solid #bbb;
 	background-color: #eee;
-	align-items: center;
 }
 /* Tablet View */
 @media only screen and (min-width: 37.5em) {
