@@ -8,7 +8,6 @@ h1, h2 {
 nav a:hover {
     color:rgb(125, 7, 46);
 }
-
 /* Small view */
 nav {
     display: block;
@@ -17,22 +16,3 @@ nav {
     text-decoration: none;
     font-size: .95rem;
 }
-
-/* Tablet View */
-@media only screen and (min-width: 37.5em) {
-	nav {
-        display: flex;
-        font-size: 1.2rem;
-    }
-    div {
-        flex: 1 1 auto;
-    }
-
-}
-/* Desktop Views */
-@media only screen and (min-width: 60em) {
-	nav {
-        font-size: 1.5rem;
-	}
-}
-
