@@ -1,42 +1,45 @@
-<!-- events.html -->
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Events practice: ToDos</title>
-    <style>
-      .todos {
-        width: 300px;
-      }
-      .todos > li {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border: 1px solid;
-        padding: 0.5em;
-      }
-      .todos p {
-        margin: 0;
-      }
-      .todos span {
-        cursor: pointer;
-      }
-      .strike {
-        text-decoration: line-through;
-        color: gray;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>ToDos</h1>
-    <section>
-      <label for="todo">Enter Task</label>
-      <input name="todo" id="todo" />
-      <button id="submitTask">Enter</button>
-    </section>
-    <ul id="todoList" class="todos"></ul>
-    <script src="scripts/practice.js"></script>
-  </body>
-</html>
+<style>
+  body {
+  width: 500px;
+  margin: 0 auto;
+}
+
+p {
+  background-color: rgb(207, 232, 220);
+  border: 2px solid rgb(79, 185, 227);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+}
+.positioned {
+  position: sticky;
+  top: 30px;
+  left: 30px;
+}
+
+</style>
+
+<h1>Fixed positioning</h1>
+
+<div class="positioned">Fixed</div>
+
+<p>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus aliquam
+  dolor, eu lacinia lorem placerat vulputate. Duis felis orci, pulvinar id metus
+  ut, rutrum luctus orci.
+</p>
+
+<p>
+  Cras porttitor imperdiet nunc, at ultricies tellus laoreet sit amet. Sed
+  auctor cursus massa at porta. Integer ligula ipsum, tristique sit amet orci
+  vel, viverra egestas ligula. Curabitur vehicula tellus neque, ac ornare ex
+  malesuada et.
+</p>
+
+<p>
+  In vitae convallis lacus. Aliquam erat volutpat. Suspendisse ac imperdiet
+  turpis. Aenean finibus sollicitudin eros pharetra congue. Duis ornare egestas
+  augue ut luctus. Proin blandit quam nec lacus varius commodo et a urna. Ut id
+  ornare felis, eget fermentum sapien.
+</p>
+

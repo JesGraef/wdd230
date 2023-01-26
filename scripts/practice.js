@@ -1,55 +1,15 @@
-let tasks = [];
-
-function renderTasks(tasks) {
-  const listElement = document.querySelector("#todoList");
-  listElement.innerHTML = "";
-  tasks.forEach((task) => {
-    listElement.innerHTML += `
-    <li ${task.completed ? 'class="strike"' : ""}>
-      <p>${task.detail}</p>
-      <div>
-        <span data-function="delete">❎</span>
-        <span data-function="complete">✅</span>
-      </div>
-    </li>`;
-  });
+body {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  font: 0.9em/1.2 Arial, Helvetica, sans-serif;
 }
-
-function newTask() {
-  const task = document.querySelector("#todo").value;
-  tasks.push({ detail: task, completed: false });
-  renderTasks(tasks);
+.box {
+  float: left;
+  margin-right: 15px;
+  width: 150px;
+  height: 100px;
+  border-radius: 5px;
+  background-color: rgb(207, 232, 220);
+  padding: 1em;
 }
-
-function removeTask(taskElement) {
-  tasks = tasks.filter(
-    (task) => task.detail != taskElement.childNodes[1].innerText
-  );
-  taskElement.remove();
-}
-
-function completeTask(taskElement) {
-  const taskIndex = tasks.findIndex(
-    (task) => task.detail === taskElement.childNodes[1].innerText
-  );
-  tasks[taskIndex].completed = tasks[taskIndex].completed ? false : true;
-  taskElement.classList.toggle("strike");
-  console.log(tasks);
-}
-
-function manageTasks(e) {
-  // did they click the delete or complete icon?
-  console.log(e.target);
-  const parent = e.target.closest("li");
-  if (e.target.dataset.function === "delete") {
-    removeTask(parent);
-  }
-  if (e.target.dataset.function === "complete") {
-    completeTask(parent);
-  }
-}
-
-document.querySelector("#submitTask").addEventListener("click", newTask);
-document.querySelector("#todoList").addEventListener("click", manageTasks);
-
-renderTasks(tasks);

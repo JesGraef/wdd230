@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Sriracha&display=swap');
+
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+}
+h1 {
+    font-family: 'Rowdies', Arial, sans-serif;
+    color: #53851D;
+}
+header, footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #DDD9CD;
+}
+.headings, .footers {
+    display: flex;
+}
+.logo {
+    width: 50px;
+}
+footer {
+    display: flex;
+}
+.social {
+    display: flex;
+}
+nav {
+    display: flex;
+}
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.green {
+    color: #53851D;
+    font-weight: bold;
+}
+nav button {
+    margin: .2rem;
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #555;
+}
+#primaryNav {
+    display: none;
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+#primaryNav a:hover {
+    color: white;
+    background-color: #53851D;
+}
+#primaryNav a {
+    display: block;
+    padding: 0.75rem;
+    text-align: center;
+    text-decoration: none;
+    color: #53851D
+}
+
+#primaryNav.open {display: block;}
+
+#hamburgerBtn span:nth-child(1) {display: block;}
+#hamburgerBtn span:nth-child(2) {display: none;}
+
+#hamburgerBtn.open span:nth-child(1) {display: none;}
+#hamburgerBtn.open span:nth-child(2) {display: block;}

@@ -1,0 +1,17 @@
+@media only screen and (min-width: 32.5em) {
+    #primaryNav {
+        display: flex;
+    }
+    nav button {
+        display: none;
+    }
+    #primaryNav li {
+        display: block;
+        flex: 1 1 100%;
+    }
+    #primaryNav li a {
+        color: green;
+        border-right: 1px solid rgba(0,0,0,0.3);
+        justify-content: flex-end;
+    }
+}
