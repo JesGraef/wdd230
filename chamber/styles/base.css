@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Sriracha&display=swap');
 
-
 body {
     font-family: 'Poppins', Arial, sans-serif;
 }
@@ -11,18 +10,38 @@ h1 {
 header, footer {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     background-color: #DDD9CD;
 }
+aside {
+    text-align: center;
+    background-color: #555;
+    color: white;
+    width: 90%
+    margin: 0 auto;
+}
 .headings, .footers {
     display: flex;
+    justify-content: space-evenly;
 }
 .logo {
     width: 50px;
 }
 footer {
     display: flex;
+}
+footer img {
+    max-height: 4rem;
+}
+.address {
+    margin-left: 0;
+}
+.footer1 {
+    text-align: center;
+    background-color: #555;
+    color: white;
+    width: 90%;
+    margin: 0 auto;
 }
 .social {
     display: flex;
@@ -32,18 +51,28 @@ nav {
 }
 .main {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+}
+.main div {
+    grid-column: span 1;
+    width: 100%;
+    background-color: gray;
+    height: 200px;
 }
 .green {
     color: #53851D;
     font-weight: bold;
 }
 nav button {
+    display: flex;
     margin: .2rem;
     background-color: transparent;
     border: none;
     font-size: 2rem;
     color: #555;
+    justify-content: right;
+    align-content: right;
 }
 #primaryNav {
     display: none;
@@ -51,6 +80,7 @@ nav button {
     text-align: center;
     padding: 0;
     margin: 0;
+    align-items: center;
 }
 #primaryNav a:hover {
     color: white;

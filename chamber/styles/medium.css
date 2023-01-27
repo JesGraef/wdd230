@@ -14,4 +14,8 @@
         border-right: 1px solid rgba(0,0,0,0.3);
         justify-content: flex-end;
     }
+    .main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+}
 }
