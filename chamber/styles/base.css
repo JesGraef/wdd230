@@ -17,18 +17,20 @@ aside {
     text-align: center;
     background-color: #555;
     color: white;
-    width: 90%
+    width: 97%;
     margin: 0 auto;
 }
 .headings, .footers {
     display: flex;
     justify-content: space-evenly;
 }
+
 .logo {
     width: 50px;
 }
 footer {
     display: flex;
+    margin-top: 20px;
 }
 footer img {
     max-height: 4rem;
@@ -40,7 +42,7 @@ footer img {
     text-align: center;
     background-color: #555;
     color: white;
-    width: 90%;
+    width: 97%;
     margin: 0 auto;
 }
 .social {
@@ -53,8 +55,11 @@ nav {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 5px;
+    color: white;
 }
 .main div {
+    margin-top: 20px;
+    margin-left: 20px;
     grid-column: span 1;
     width: 100%;
     background-color: gray;
@@ -64,17 +69,18 @@ nav {
     color: #53851D;
     font-weight: bold;
 }
-nav button {
+#hamburgerBtn {
+/* nav button { */
     display: flex;
     margin: .2rem;
     background-color: transparent;
-    border: none;
+    border: none; 
     font-size: 2rem;
     color: #555;
     justify-content: right;
     align-content: right;
 }
-#primaryNav {
+nav ul {
     display: none;
     list-style: none;
     text-align: center;
@@ -87,14 +93,13 @@ nav button {
     background-color: #53851D;
 }
 #primaryNav a {
-    display: block;
     padding: 0.75rem;
     text-align: center;
     text-decoration: none;
     color: #53851D
 }
 
-#primaryNav.open {display: block;}
+nav ul.open {display: block;}
 
 #hamburgerBtn span:nth-child(1) {display: block;}
 #hamburgerBtn span:nth-child(2) {display: none;}

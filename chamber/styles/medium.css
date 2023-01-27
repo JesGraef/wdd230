@@ -2,7 +2,7 @@
     #primaryNav {
         display: flex;
     }
-    nav button {
+    #hamburgerBtn {
         display: none;
     }
     #primaryNav li {

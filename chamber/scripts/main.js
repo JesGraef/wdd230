@@ -12,8 +12,6 @@ const fulldateUK = new Intl.DateTimeFormat("en-UK", {
 
 datefieldUK.innerHTML = `<em>${fulldateUK}</em>`;
 
-
-
 let date = new Date(document.lastModified);
 let shortDate = date.toLocaleDateString('en-US');
 let hours = date.getHours();
@@ -27,9 +25,9 @@ let currentYear = currentDate.getFullYear()
 document.querySelector('#year').innerHTML = currentYear;
 
 function toggleMenu() {
-	document.getElementById('primaryNav').classlist.toggle('open');
-	document.getElementById('hamburgerBtn').classlist.toggle('open');
+	document.getElementById('primaryNav').classList.toggle('open');
+	document.getElementById('hamburgerBtn').classList.toggle('open');
 }
-const x = document.getElementById('hamburgerBtn')
+const x = document.getElementById('hamburgerBtn');
 
 x.onclick = toggleMenu;
