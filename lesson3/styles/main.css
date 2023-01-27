@@ -5,12 +5,15 @@ body {
 header {
     display: flex;
     background-color: #DDD9CD;
+   
 }
 footer {
     background-color: #DDD9CD;
+    text-align: center;
 }
 nav a {
     text-decoration: none;
+    padding: 50px;
 }
 h1, h2 {
     font-family: 'Sriracha', cursive;
