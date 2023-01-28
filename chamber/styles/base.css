@@ -4,7 +4,7 @@ body {
     font-family: 'Poppins', Arial, sans-serif;
 }
 h1 {
-    font-family: 'Rowdies', Arial, sans-serif;
+    font-family: 'Sriracha', Arial, sans-serif;
     color: #53851D;
 }
 header, footer {
@@ -24,7 +24,6 @@ aside {
     display: flex;
     justify-content: space-evenly;
 }
-
 .logo {
     width: 50px;
 }
@@ -63,11 +62,11 @@ nav {
     grid-column: span 1;
     width: 100%;
     background-color: gray;
-    height: 200px;
 }
 .green {
     color: #53851D;
-    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Sriracha', Arial, sans-serif;
 }
 #hamburgerBtn {
 /* nav button { */
