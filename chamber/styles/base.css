@@ -19,6 +19,7 @@ aside {
     color: white;
     width: 97%;
     margin: 0 auto;
+    opacity: .8;
 }
 .headings, .footers {
     display: flex;
@@ -55,6 +56,7 @@ nav {
     grid-template-columns: 1fr;
     grid-gap: 5px;
     color: white;
+    opacity: .9;
 }
 .main div {
     margin-top: 20px;
@@ -62,6 +64,7 @@ nav {
     grid-column: span 1;
     width: 100%;
     background-color: gray;
+    height: 200px;
 }
 .green {
     color: #53851D;
