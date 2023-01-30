@@ -52,8 +52,6 @@ nav {
     display: flex;
 }
 .main {
-    display: grid;
-    grid-template-columns: 1fr;
     grid-gap: 5px;
     color: white;
     opacity: .9;
@@ -61,7 +59,6 @@ nav {
 .main div {
     margin-top: 20px;
     margin-left: 20px;
-    grid-column: span 1;
     width: 100%;
     background-color: gray;
     height: 200px;
@@ -80,7 +77,7 @@ nav {
     font-size: 2rem;
     color: #555;
     justify-content: right;
-    align-content: right;
+    align-content: flex-end;
 }
 nav ul {
     display: none;
