@@ -54,7 +54,10 @@ aside {
     padding: 5px 10px;
     border-radius: 5px;
 }
-h3 {
+.heart {
+    font-size: 1.2rem;
+}
+h3, h4 {
     text-align: center;
     color:#e71d36;
 }
@@ -71,6 +74,7 @@ footer {
 }
 main p, h2, h4 {
     color: #22223b;
+    text-align: center;
 }
 footer img {
     max-height: 4rem;
