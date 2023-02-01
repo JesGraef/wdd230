@@ -1,0 +1,28 @@
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "event hero spot1"
+        "weather hero spot2"
+        "join news";
+}
+#hero {
+    grid-area: hero;
+}
+#event {
+    grid-area: event;
+}
+#weather {
+    grid-area: weather;
+}
+/* #news {
+    grid-area: news;
+}
+#spot1 {
+    grid-area: spot1;
+}
+#spot2 {
+    grid-area: spot2;
+} */

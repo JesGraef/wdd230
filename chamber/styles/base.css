@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Sriracha&display=swap');
-
+* {
+    box-sizing: border-box;
+  }
 body {
     font-family: 'Poppins', Arial, sans-serif;
 }
@@ -11,15 +13,50 @@ header, footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #DDD9CD;
+    background-color: #FEFAE0;
 }
 aside {
     text-align: center;
-    background-color: #555;
+    background-color: #e07a5f;
     color: white;
-    width: 97%;
+    width: 98%;
     margin: 0 auto;
-    opacity: .8;
+}
+#hero img {
+    width: 100%;
+}
+#hero h2{
+    position: absolute;
+    color: #bf4342;
+    font-family: 'Sriracha', Arial, sans-serif;
+    margin-left: 5px;
+    font-size: 2rem;
+}
+#hero .join {
+    position: absolute;
+    bottom: 125px;
+    left: 700px;
+    background-color: #e07a5f;
+}
+#hero a {
+    background-color: #63e2c6;
+    color: black; 
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.join2 {
+    background-color: #e07a5f;
+    color: black; 
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+h3 {
+    text-align: center;
+    color:#e71d36;
 }
 .headings, .footers {
     display: flex;
@@ -32,6 +69,9 @@ footer {
     display: flex;
     margin-top: 20px;
 }
+main p, h2, h4 {
+    color: #22223b;
+}
 footer img {
     max-height: 4rem;
 }
@@ -40,9 +80,9 @@ footer img {
 }
 .footer1 {
     text-align: center;
-    background-color: #555;
+    background-color: #e07a5f;
     color: white;
-    width: 97%;
+    width: 98%;
     margin: 0 auto;
 }
 .social {
@@ -60,9 +100,12 @@ nav {
     margin-top: 20px;
     margin-left: 20px;
     width: 100%;
-    background-color: gray;
+    background-color: #52b788;
     height: 200px;
 }
+.main_grid1, .main_grid2, .main_grid3, .main_grid4, .main_grid5, .main_grid6 {
+    padding: 10px;;
+} 
 .green {
     color: #53851D;
     font-size: 20px;
@@ -87,13 +130,14 @@ nav ul {
     margin: 0;
     align-items: center;
 }
-#primaryNav a:hover {
+#primaryNav a:hover{
     color: white;
     background-color: #53851D;
 }
 #primaryNav a {
+    display: block;
     padding: 0.75rem;
-    text-align: center;
+    text-align: left;
     text-decoration: none;
     color: #53851D
 }
