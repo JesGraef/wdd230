@@ -1,5 +1,5 @@
 // select the elements to manipulate (output to)
-const datefield = document.querySelector(".date");
+// const datefield = document.querySelector(".date");
 const datefieldUK = document.querySelector("aside"); // for european/family history format with day first.
 
 // derive the current date using a date object
@@ -12,17 +12,23 @@ const fulldateUK = new Intl.DateTimeFormat("en-UK", {
 
 datefieldUK.innerHTML = `<em>${fulldateUK}</em>`;
 
-let date = new Date(document.lastModified);
-let shortDate = date.toLocaleDateString('en-US');
-let hours = date.getHours();
-let min = date.getMinutes();
-let sec = date.getSeconds();
-let fullDate = `${shortDate} ${hours}:${min}:${sec}`
+const date = new Date(document.lastModified);
+const shortDate = date.toLocaleDateString('en-US');
+const hours = date.getHours();
+const min = date.getMinutes();
+const sec = date.getSeconds();
+const fullDate = `${shortDate} ${hours}:${min}:${sec}`
 document.getElementById("modified").innerHTML = fullDate;
 
-let currentDate = new Date()
-let currentYear = currentDate.getFullYear()
+const currentDate = new Date()
+const currentYear = currentDate.getFullYear()
 document.querySelector('#year').innerHTML = currentYear;
+
+const announcement = document.querySelector('#announcement');
+const today = new Date();
+if(today.getDay() == 1 || today.getDay() == 2) {
+	announcement.style.display = 'block';
+}
 
 function toggleMenu() {
 	document.getElementById('primaryNav').classList.toggle('open');
@@ -31,3 +37,4 @@ function toggleMenu() {
 const x = document.getElementById('hamburgerBtn');
 
 x.onclick = toggleMenu;
+
