@@ -17,8 +17,8 @@ header, footer {
 }
 aside {
     text-align: center;
-    background-color: #e07a5f;
-    color: #FEFAE0;
+    background-color: #BC4749;
+    color: white;
     width: 98%;
     margin: 0 auto;
 }
@@ -34,7 +34,7 @@ aside {
 }
 #hero h2{
     position: absolute;
-    color: #bf4342;
+    color: #363636;
     font-family: 'Sriracha', Arial, sans-serif;
     margin-left: 5px;
     font-size: 2rem;
@@ -60,7 +60,7 @@ aside {
 }
 h3, h4 {
     text-align: center;
-    color:#e71d36;
+    color:black;
 }
 .headings, .footers {
     display: flex;
@@ -85,7 +85,7 @@ footer img {
 }
 .footer1 {
     text-align: center;
-    background-color: #e07a5f;
+    background-color: #BC4749;
     color: white;
     width: 98%;
     margin: 0 auto;
@@ -128,7 +128,7 @@ nav {
     display: none;
 }
 .green {
-    color: #53851D;
+    color: #238055;
     font-size: 20px;
     font-family: 'Sriracha', Arial, sans-serif;
 }
