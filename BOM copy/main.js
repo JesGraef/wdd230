@@ -1,29 +1,30 @@
-const list = document.querySelector('ul');
-    const input = document.querySelector('input');
-    const button = document.querySelector('button');
+const list = document.querySelector("#list");
+const badWords = ["ass", "hell"];
 
-    button.addEventListener('click', () => {
-      const myItem = input.value;
-      input.value = '';
-      console.log(myItem)
-      if (myItem === "") {
+function hasBadWords(text) {
+  return text.split(" ").filter(word => badWords.includes(word)).length > 0;
+}
+
+function getRandomJoke() {
+  fetch("https://api.chucknorris.io/jokes/random")
+    .then(response => response.json())
+    .then(data => {
+      const item = document.createElement("li");
+      if (hasBadWords(data.value)) {
+        item.className = "bad";
+        item.textContent = "Sorry this joke has a bad word."
+      } else {
+        item.textContent = data.value;
       }
-      else{
-        const listItem = document.createElement('li');
-        const listText = document.createElement('span');
-        const listBtn = document.createElement('button');
 
-        listItem.appendChild(listText);
-        listText.textContent = myItem;
-        listItem.appendChild(listBtn);
-        listBtn.textContent = '❌';
-        list.appendChild(listItem);
+      const deleteButton = document.createElement("button");
+      deleteButton.textContent = '❌';
+      deleteButton.addEventListener('click', () => item.remove());
 
-        listBtn.addEventListener('click', () => {
-            list.removeChild(listItem);
-        });
+      list.appendChild(item).appendChild(deleteButton);
+    })
+}
 
-        input.focus();
-      }
-      
-    });
+function deleteJokes() {
+  list.innerHTML = "";
+}
