@@ -1,5 +1,5 @@
 const list = document.querySelector("#list");
-const badWords = ["ass", "hell"];
+const badWords = ["ass", "ass.", "@$$.", "badass", "hell", "asses", "damn", "goddamn", "shit", "shits", "Shit", "bitch", "bitches", "dick", "dick.","fu-", "fuck", "fucks", "fuck.", "fucking"];
 
 function hasBadWords(text) {
   return text.split(" ").filter(word => badWords.includes(word)).length > 0;

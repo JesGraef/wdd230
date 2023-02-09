@@ -46,9 +46,15 @@
         <p id="announcement">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
         <div class="main">
             <div id="hero">
-                <h2>Welcome to Rothesay</h2>
+                <!-- <h2>Welcome to Rothesay</h2>
                 <a class="join" href="join.html">Join the Chamber</a>
-                <img id="hero-img" src="images/b.jpg" alt="Canadian Mountains">
+                <img id="hero-img" src="images/b.jpg" alt="Canadian Mountains"> -->
+                <picture>
+                    <source media="(max-width: 500px)" srcset="images/small.jpg">
+                    <source media="(max-width: 1000px)" srcset="images/medium.jpg">
+                    <source media="(max-width: 1600px)" srcset="images/large.jpg">
+                    <img src="images/orig.jpg" alt="picture test">
+                </picture>
             </div> 
             <div class="main_grid1" id="event">
                 <h3>Ribbon Cutting</h3>
@@ -58,11 +64,11 @@
             <div class="main_grid2" id="weather">
                 <h3>Weather</h3>
                 <img class='weatherPic' src="images/weather.jpg" alt="Weather picture">
-                <!-- <span id="temperature">33</span>
+                <span id="temperature"></span>
                 <p>Partly Cloudy</p>
                 <hr />
                 <p><span>Wind Speed: </span> <span id="speed">25</span> km/h</p>
-                <p><span>Wind Chill: </span> <span id="chill">N/A</span></p> -->
+                <p><span>Wind Chill: </span> <span id="chill">N/A</span></p>
             </div>
             <div class="main_grid3" id="news">
                 <h3>News Release</h3> 
@@ -77,30 +83,40 @@
             </div>
             <div class="main_grid5">
                 <h3>Thankful Transport</h3>
+                <img class='truck' src="images/truck.jpeg" alt="truck">
                 <h4>"We get it there for you!"</h4>
+                <hr />
                 <p>hello@thankfultransport.com</p>
+                <p>+123-456-789 | Website</p>
             </div>
             <div class="main_grid6">
                 <h3>Build a Treefort</h3>
+                <img class='tree' src="images/tree.jpeg" alt="tree">
                 <h4>Over 1000 Plans!</h4>
+                <hr />
                 <p>builda@treefort.com</p>
+                <p>+123-456-789 | Website</p>
             </div>
             <div class="main_grid7">
                 <h3>Build a Treefort</h3>
+                <img class='tree' src="images/tree.jpeg" alt="tree">
                 <h4>Over 1000 Plans!</h4>
+                <hr />
                 <p>builda@treefort.com</p>
+                <p>+123-456-789 | Website</p>
+               
             </div>
         </div>
     </main>
     <footer>
         <section class="footers">
-            <img src="images/logo.png" alt="Site logo">
+            <img class="footerImg" src="images/logo.png" alt="Site logo">
             <div class="address">
                 <p class="green">The Rothesay Chamber</p>
                 <p>70 Hampton Rd</p>
                 <p>Rothesay, NB E2E 5Y2</p>
             </div>
-            <div>
+            <div class="contact">
                 <p>info@rothesaychamber.org</p>
                 <p>(506) 123-456</p>
                 <a class='location' href="https://www.rothesay.ca/">📍 Location Map</a>

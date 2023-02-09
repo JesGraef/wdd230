@@ -1,7 +1,7 @@
 const t = 35;
 const s = 3.5;
 
-document.querySelector('#temperature').textContent = t;
+document.querySelector('#temperature').textContent = `${t}\u00B0C`;
 document.querySelector('#speed').textContent = s;
 
 let f = "N/A";
