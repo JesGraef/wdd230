@@ -155,16 +155,20 @@ nav {
     font-family: 'Sriracha', Arial, sans-serif;
 }
 .hover {
-    margin: 20px;
     width: 100%;
+    filter: blur(0em);
+    transition: filter 0.5s;
+    /* border: 2px #52b788 solid; */
 }
-.label {
+.hover[data-src] {
+    filter: blur(0.1em)
+}
+/* .label {
     font-weight: 900;
-    /* color:#83c839; */
     color: #BC4749;
-}
+} */
 #visits {
-    color: greenyellow;
+    color: #BC4749;
     font-weight: bolder;
     font-size: larger;
 }
@@ -172,9 +176,10 @@ nav {
     margin: 30px;
     /* how do I put margin on the right side? */
 }
-.discover p {
+.discover p { 
     margin: 30px;
 }
+.
 #hamburgerBtn {
     display: flex;
     margin: .2rem;
