@@ -5,8 +5,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discovery Page</title>
+    <meta name="description" content="This contains demographic and statistics information about the town of Rothesay.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Rowdies&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/main.js" defer></script>
+    <script src="discover.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <section class="headings">
+            <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+            <img class="logo" src="images/logo.png" alt="Site logo">
+            <h1>The Rothesay Chamber</h1>
+            <nav>
+                <ul id="primaryNav">
+                    <li><a href="index.html">Home</a></li>
+                     <li><a href="discover.html">Discover</a></li>
+                     <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="contactus.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/fb.png" alt="fb icon">
+                </a>
+                <a href="https://linkedin.com" target="_blank">
+                    <img src="images/Linkedin.png" alt="linkedin icon">
+                </a>
+            </div> 
+        </section>
+        <section>
+            <div class="date"></div>
+            <aside></aside>
+        </section>
+    </header>
+    <main class="discover">
+        <img class="hover" src="images/placeholder.gif" data-src="images/discover1.jpg" alt="people">
+        <p>In 2021, the population in Rothesay is “11,977 living in 4,873 of its 5,007 total private dwellings". 
+            It has a land area of 34.59 km2 (13.36 sq mi) and the elevation is 75 meters above sea level.</p>
+        <img class="hover" src="images/placeholder.gif" data-src="images/discover2.jpg" alt="boats">
+        <p>In the summer time, Rothesay is a beautiful place to "enjoy local park areas, beach sites, wharves, 
+            hiking trails and several playground areas for children, in addition to a thriving commercial district."</p>
+        <img class="hover" src="images/placeholder.gif" data-src="images/discover3.jpg" alt="fall">
+        <p>Fall is a very popular time anywhere in the Maritimes where people from bigger cities take some time 
+            off to enjoy. Here in Rothesay, is a perfect place to enjoy nature.</p>
+        <img class="hover" src="images/placeholder.gif" data-src="images/discover4.jpg" alt="rolling hills">
+        <p>Rothesay is "one of the most attractive living environments in Atlantic Canada When you're driving 
+            around the area, this is the nature you'll enjoy.</p>
+        <img class="hover" src="images/placeholder.gif" data-src="images/discover5.jpg" alt="icy place">
+        <p>Here in the true north, Canadians have lots of activities during the winter. One of the popular 
+            activity is ice fishing and here in Rothesay, at the Renforth Wharf is a perfect place to have a 
+            "superior ice fishing experience". </p>
+        <p><span class="label">Amount of Days Since Last Visit: </span><span id="visits"></span></p>
+    </main>
+    <footer>
+        <section class="footers">
+            <img class="footerImg" src="images/logo.png" alt="Site logo">
+            <div class="address">
+                <p class="green">The Rothesay Chamber</p>
+                <p>70 Hampton Rd</p>
+                <p>Rothesay, NB E2E 5Y2</p>
+            </div>
+            <div class="contact">
+                <p>info@rothesaychamber.org</p>
+                <p>(506) 123-456</p>
+                <a class='location' href="https://www.rothesay.ca/">📍 Location Map</a>
+        
+            </div>
+        </section>
+        <section>
+            <p class="footer1">&copy; <span id="year"></span> The Rothesay Chamber |  Jessa Graef  |  WDD 230 Project | Last Updated: <span id="modified"></span></p>
+        </section>
+    </footer>
 </body>
 </html>

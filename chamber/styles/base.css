@@ -154,6 +154,27 @@ nav {
     font-size: 20px;
     font-family: 'Sriracha', Arial, sans-serif;
 }
+.hover {
+    margin: 20px;
+    width: 100%;
+}
+.label {
+    font-weight: 900;
+    /* color:#83c839; */
+    color: #BC4749;
+}
+#visits {
+    color: greenyellow;
+    font-weight: bolder;
+    font-size: larger;
+}
+.discover {
+    margin: 30px;
+    /* how do I put margin on the right side? */
+}
+.discover p {
+    margin: 30px;
+}
 #hamburgerBtn {
     display: flex;
     margin: .2rem;
