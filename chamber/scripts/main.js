@@ -38,3 +38,5 @@ const x = document.getElementById('hamburgerBtn');
 
 x.onclick = toggleMenu;
 
+// Hidden element on Join Page
+document.querySelector('#dateTime').value = today;

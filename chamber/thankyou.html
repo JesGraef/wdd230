@@ -42,48 +42,9 @@
             <aside></aside>
         </section>
     </header>
-    <main>
-        <h1 class="joinpage">Join Our Chamber!</h1>
-        <form method="get" action="thankyou.html">
-            <fieldset>
-                <legend>Applicant Information</legend>
-                <label class="top">First Name* <input type="text" name="fname" required></label>
-                <label class="top">Last Name* <input type="text" name="lname" required></label>
-                <label class="top">Business Title <input type="text" name="btitle" pattern="^(?=.*)[a-zA-Z\s\-]{7,}$"></label>
-                <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
-                <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
-                <label class="top">Business Name* <input type="text" name="bname" required></label>
-            </fieldset>
-        
-            <fieldset>
-                <legend>Membership Level</legend>
-                <div>Please choose your membership:</div>
-                <div class="membership">
-                    <div>
-                    <label class="sbs"><input type="radio" name="audience" value="np"> NP</label>
-                    <label class="sbs"><input type="radio" name="audience" value="bronze"> Bronze</label>
-                    <label class="sbs"><input type="radio" name="audience" value="silver"> Silver</label>
-                    <label class="sbs"><input type="radio" name="audience" value="gold"> Gold</label>
-                    </div>
-                    <div class="memberInfo">
-                    <p>⭐ NP Membership is for non profit organizations and there is no fee.</p>
-                    <p>⭐ The memberships have increasing costs and benefits per level like trainings, 
-                        advertising (like on the home page spotlights), event discounts, etc.</p></div>
-                </div>
-            </fieldset>
-            
-            <fieldset>
-                <legend>Business Information</legend>
-                <!-- <label class="top" for="comments">Please briefly describe your business.</label>
-		        <textarea id="comments" name="comments" required></textarea> -->
-                <label class="top">Please briefly describe your business. <textarea name="comments"></textarea></label>
-		        <input type="hidden" id="dateTime">
-            </fieldset>
-
-            <label><input type="submit" value="Join The Rothesay Chamber" class="submitBtn"></label>
-
-        </form> 
-
+    <main class="thanksmain">
+        <h1 class="joinpage">Join Us Application</h1>
+            <p class="thankyou">Thank you for joining us! Please watch your inbox for emails from us!</p>
     </main>
     <footer>
         <section class="footers">
