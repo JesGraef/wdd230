@@ -1,0 +1,77 @@
+`[
+    {
+        "name": "Urban Landscaping",
+        "address": "65 Marr Road, Rothesay, NB E2E 3J9",
+        "phone": 5068494124",
+        "wesbite": "https://urbanlandscaping.ca/",
+        "image": null,
+        "membership": ""
+    },
+    {
+
+        "name": "Cochran's Country Market",
+        "address": "106 Hampton Rd, Rothesay, NB E2E 2P8",
+        "phone": 5068494840,
+        "wesbite": "https://cochranscountrymarket.com/default.asp",
+        "image": "",
+        "membership": ""
+    },
+    {
+
+        "name": "Kennebecasis Self Storage",
+        "address": "566 Millennium Dr, Rothesay, NB E2E 6E3",
+        "phone": 5068478673,
+        "wesbite": "https://kennebecasisselfstorage.ca/",
+        "image": "",
+        "membership": ""
+    },
+    {
+        "name": "Rothesay Laser Clinic",
+        "address": "121 Hampton Road, Rothesay, NB E2E 2P8",
+        "phone":5068478302,
+        "wesbite": "https://rothesaylaserclinicandspa.com/",
+        "image": "",
+        "membership": ""
+    },
+    {
+        "name": "Brentax",
+        "address": "38 Marr Road, Rothesay, NB E2E 3K6",
+        "phone": 5068494040,
+        "wesbite": "http://brentax.com/",
+        "image": "",
+        "membership": ""
+    },
+    {
+        "name": "Avenue Animal Hospital",
+        "address": "507 Rothesay Ave, Saint John, NB E2J 2C6",
+        "phone": 5066331885,
+        "wesbite": "https://www.avenueanimalhospital.com/site/home",
+        "image": "",
+        "membership": ""
+    },
+    {
+        "name": "Rothesay Netherwood School",
+        "address": "40 College Hill Road, Rothesay, NB E2E 5H1",
+        "phone": 5068478224,
+        "wesbite": "https://www.rns.cc/",
+        "image": "",
+        "membership": ""
+    },
+    {
+        "name": "Riverside Country Club",
+        "address": "2524 Rothesay Road, Rothesay, NB E2H 2K7",
+        "phone": 5068477545,
+        "wesbite": "https://www.riversidecountryclub.ca/",
+        "image": "",
+        "membership": ""
+    },
+    {
+        "name": "Foghorn Brewing Company",
+        "address": "47 Clark Road, Rothesay, E2E 2K8",
+        "phone": 5062167000,
+        "wesbite": "https://drinkfoghorn.ca/",
+        "image": "",
+        "membership": ""
+    }
+
+]`
