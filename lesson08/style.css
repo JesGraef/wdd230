@@ -3,7 +3,7 @@ tbody tr:nth-child(even) {
 }
 table {
     border-collapse: collapse;
-    border: 1x solid rgb(200,200,200);
+    border: thin solid rgb(200,200,200);
     letter-spacing: 1px;
     font-size: 0.8rem;
 }
