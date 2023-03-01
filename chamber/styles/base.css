@@ -308,3 +308,9 @@ fieldset .membership {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
+div#cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 1px solid black;
+}

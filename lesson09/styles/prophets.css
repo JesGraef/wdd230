@@ -1,0 +1,24 @@
+* {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+
+div.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 10px;
+    box-shadow: 0 0 50px #777;
+    padding: 40px;
+}
+
+header, footer {
+    padding: 30px;
+}
+div.cards section {
+    border: 1px solid black;
+    padding: 15px;
+}
+
+img {
+    box-shadow: 0 0 30px rgb(43, 40, 40);  
+}
