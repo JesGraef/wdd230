@@ -301,7 +301,6 @@ form label.top input:required:valid {
     border-radius: 10px;
     display: grid;
     align-items: center;
-
 }
 
 fieldset .membership {
@@ -309,8 +308,59 @@ fieldset .membership {
     grid-template-columns: 1fr 1fr;
 }
 
-div#cards {
+/* Directory Page */
+.grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    border: 1px solid black;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 10px;
+    padding: 20px;;
+    font-size: .75rem;
+    text-align: center;
+}
+.grid section {
+    box-shadow: 0 0 10px #777;
+    padding: 15px;
+}
+
+.menu {
+	margin: 1rem auto;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	/* background-color: #bbb; */
+	text-align: center;
+}
+.menu button {
+	padding: 1rem;
+	font-weight: 700;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+}
+
+.list section {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
+	margin: 0;
+	padding: 0.25rem;
+}
+
+.list section > * {
+	margin: 0 1rem;
+}
+
+.list section img {
+	display: none; /* smaller viewports only */
+}
+
+.list section:nth-child(even) {
+	background-color: #bed;
+}
+.directory {
+    margin: 30px;
+    text-align: center;
+    /* font-family: Geneva, Verdana, sans-serif; */
+    /* color: #BC4749; */
+    color: rgb(14, 173, 51);
 }
