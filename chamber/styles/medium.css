@@ -52,5 +52,12 @@
         grid-row: 3/4;
         height: 100%;
     }*/
+    /* Directory Page */
+    .list section {
+        display: grid;
+        grid-template-columns: .8fr 1fr .4fr 1fr;
+        margin: 0;
+        padding: 0.25rem;
+    }
 } 
 

@@ -315,10 +315,10 @@ fieldset .membership {
     grid-gap: 10px;
     padding: 20px;;
     font-size: .75rem;
-    text-align: center;
+    text-align: center;    
 }
 .grid section {
-    box-shadow: 0 0 10px #777;
+    box-shadow: 0 0 30px #777;
     padding: 15px;
 }
 
@@ -340,10 +340,9 @@ fieldset .membership {
 }
 
 .list section {
-	display: grid;
-	grid-template-columns: 2fr 1fr 1fr;
-	margin: 0;
-	padding: 0.25rem;
+	display: block;
+    text-align-last: left;
+	padding: 1rem;
 }
 
 .list section > * {
@@ -356,6 +355,7 @@ fieldset .membership {
 
 .list section:nth-child(even) {
 	background-color: #bed;
+
 }
 .directory {
     margin: 30px;

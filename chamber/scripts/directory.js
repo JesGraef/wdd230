@@ -9,22 +9,22 @@ fetch('./data.json')
             // Create elements to add to the div.grid element
             let card = document.createElement('section');
             let portrait = document.createElement('img');
-            // let name = document.createElement('p');
+            let name = document.createElement('p');
             let address = document.createElement('p');
             let phone = document.createElement('p');
             let url = document.createElement('p');
 
-            // // Build the p content to show the business name
-            // name.textContent = directory.name;
+            // Build the p content to show the business name
+            name.textContent = directory.name;
     
             // Build the p content to show the business address
             address.textContent = directory.address;
 
             // Build the p content to show the phone
-            phone.textContent = directory.name;
+            phone.textContent = directory.phone;
     
             // Build the p content to show the website url
-            url.textContent = directory.address;
+            url.textContent = directory.website;
     
             // Build the image portrait by setting all the relevant attribute
             portrait.setAttribute('src', directory.image);
@@ -35,7 +35,7 @@ fetch('./data.json')
     
             // Append the section(card) with the created elements
             card.appendChild(portrait);
-            // card.appendChild(name);
+            card.appendChild(name);
             card.appendChild(address);
             card.appendChild(phone);
             card.appendChild(url);

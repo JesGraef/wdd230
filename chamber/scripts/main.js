@@ -29,7 +29,7 @@ if(today.getDay() == 1 || today.getDay() == 2) {
 	announcement.style.display = 'block';
 }
 
-//Hamburger
+// Hamburger
 function toggleMenu() {
 	document.getElementById('primaryNav').classList.toggle('open');
 	document.getElementById('hamburgerBtn').classList.toggle('open');

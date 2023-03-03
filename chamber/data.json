@@ -12,7 +12,7 @@
         "name": "Cochran's Country Market",
         "address": "106 Hampton Rd, Rothesay, NB E2E 2P8",
         "phone": "506-849-4840",
-        "website": "https://cochranscountrymarket.com/default.asp",
+        "website": "https://cochranscountrymarket.com/",
         "image": "images/logoCochran.png",
         "membership": ""
     },
@@ -45,7 +45,7 @@
         "name": "Avenue Animal Hospital",
         "address": "507 Rothesay Ave, Saint John, NB E2J 2C6",
         "phone": "506-633-1885",
-        "website": "https://www.avenueanimalhospital.com/site/home",
+        "website": "https://www.avenueanimalhospital.com/",
         "image": "images/logoAveHospital.jpg",
         "membership": ""
     },
