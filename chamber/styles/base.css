@@ -48,7 +48,6 @@ aside {
     font-size: 2rem;
 }
 #hero a {
-    /* background-color: #63e2c6; */
     position: absolute;
     color: black; 
     text-decoration: none;
@@ -75,12 +74,6 @@ h3, h4 {
     justify-content: space-evenly;
     align-items: center;
 }
-/* .footers, .contact {
-    margin-left: 250px;
-}
-.footerImg {
-    margin-right: 10px;
-} */
 .logo {
     width: 50px;
 }
@@ -110,9 +103,6 @@ footer img {
 }
 .social {
     display: flex;
-    /* margin-left: 150px; */
-    /* height: 16px;
-    margin-top: 16px; */
 }
 nav {
     display: flex;
@@ -137,7 +127,6 @@ nav {
     margin-left: 20px;
     width: 100%;
     background-color: #52b788;
-    /* height: 200px; */
 }
 .main_grid5, .main_grid6, .main_grid7 {
     text-align: center;
@@ -161,15 +150,10 @@ nav {
     width: 100%;
     filter: blur(0em);
     transition: filter 0.5s;
-    /* border: 2px #52b788 solid; */
 }
 .hover[data-src] {
     filter: blur(0.1em)
 }
-/* .label {
-    font-weight: 900;
-    color: #BC4749;
-} */
 #visits {
     color: #BC4749;
     font-weight: bolder;
@@ -177,7 +161,6 @@ nav {
 }
 .discover {
     margin: 30px;
-    /* how do I put margin on the right side? */
 }
 .discover p { 
     margin: 30px;
@@ -227,11 +210,7 @@ nav ul.open {display: block;}
 form {
 	max-width: 480px;
 	margin: auto;
-	/* border: 1px solid #bbb; */
 	padding: 0.5rem;
-	/* background-color: #FEFAE0; */
-    /* background-color: #52b788; */
-    /* border-radius: 10px; */
 	align-items: center;
 }
 form fieldset {
@@ -241,14 +220,12 @@ form fieldset {
     padding: .5rem 2%;
 }
 form legend {
-    /* color: #53851D; */
     margin: 0 1rem;
     padding: 0 .5rem; 
 }
 form label.top, form div {
     display: block;
     padding-top: 1rem;
-    /* color: #53851D; */
     font-size: 1rem;
 }
 form label.top input, form label.top select {
@@ -257,7 +234,6 @@ form label.top input, form label.top select {
     border: solid 1px #999;
     border-radius: 4px;
     padding: .75rem;
-    /* color: #555; */
     width: 100%;
     max-width: 20rem;
     background-color: rgba(0,0,0,0.1);
@@ -273,7 +249,6 @@ form input.submitBtn {
     color: white;
     border-radius: 1rem;
     padding: .75rem 1.5rem;
-    /* margin: 0 0 2rem 2%; */
     margin: auto;
     width: 96%;
     max-width: 20rem;
@@ -296,8 +271,6 @@ form label.top input:required:valid {
     margin: 30px auto;
     border: 1px solid #bbb;
     padding: 2rem;
-    /* background-color: #FEFAE0; */
-    /* background-color: #52b788; */
     border-radius: 10px;
     display: grid;
     align-items: center;
@@ -326,7 +299,6 @@ fieldset .membership {
 	margin: 1rem auto;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	padding: 0.5rem;
-	/* background-color: #bbb; */
 	text-align: center;
 }
 .menu button {
@@ -360,6 +332,12 @@ fieldset .membership {
 .directory {
     margin: 30px;
     text-align: center;
-    /* font-family: Geneva, Verdana, sans-serif; */
-    /* color: #BC4749; */
+}
+
+/* Contact Page */
+div.contact {
+    width: 40%;
+}
+div.rothesay {
+    float: left;
 }

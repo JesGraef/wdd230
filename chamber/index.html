@@ -26,7 +26,7 @@
                     <li><a href="discover.html">Discover</a></li>
                     <li><a href="join.html">Join</a></li>
                     <li><a href="directory.html">Directory</a></li>
-                    <li><a href="contactus.html">Contact</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
             <div class="social">
@@ -64,9 +64,9 @@
             </div>
             <div class="main_grid2" id="weather">
                 <h3>Weather</h3>
-                <img class='weatherPic' src="images/weather.jpg" alt="Weather picture">
+                <img id='weatherPic' src="" alt="Weather picture">
                 <span id="temperature"></span>
-                <p>Partly Cloudy</p>
+                <p id="tempdesc"></p>
                 <hr />
                 <p><span>Wind Speed: </span> <span id="speed">25</span> km/h</p>
                 <p><span>Wind Chill: </span> <span id="chill">N/A</span></p>
@@ -105,9 +105,9 @@
                 <hr />
                 <p>builda@treefort.com</p>
                 <p>+123-456-789 | Website</p>
-               
             </div>
         </div>
+        <p>The weather is based on <a href="https://openweathermap.org/">OpenWeatherMap</a></p>
     </main>
     <footer>
         <section class="footers">
@@ -123,11 +123,12 @@
                 <a class='location' href="https://www.rothesay.ca/">📍 Location Map</a>
         
             </div>
+            
         </section>
         <section>
             <p class="footer1">&copy; <span id="year"></span> The Rothesay Chamber |  Jessa Graef  |  WDD 230 Project | Last Updated: <span id="modified"></span></p>
         </section>
-
+       
     </footer>
 </body>
 </html>

@@ -5,7 +5,7 @@
         "phone": "506-849-4124",
         "website": "https://urbanlandscaping.ca/",
         "image": "images/logoUrban.jpg",
-        "membership": ""
+        "membership": "Gold"
     },
     {
 
@@ -14,7 +14,7 @@
         "phone": "506-849-4840",
         "website": "https://cochranscountrymarket.com/",
         "image": "images/logoCochran.png",
-        "membership": ""
+        "membership": "Silver"
     },
     {
 
@@ -23,7 +23,7 @@
         "phone": "506-847-8673",
         "website": "https://kennebecasisselfstorage.ca/",
         "image": "images/logoKenStorage.png",
-        "membership": ""
+        "membership": "Silver"
     },
     {
         "name": "Rothesay Laser Clinic",
@@ -31,7 +31,7 @@
         "phone": "506-847-8302",
         "website": "https://rothesaylaserclinicandspa.com/",
         "image": "images/logoLaserClinic.webp",
-        "membership": ""
+        "membership": "Bronze"
     },
     {
         "name": "Brentax",
@@ -39,7 +39,7 @@
         "phone": "506-849-4040",
         "website": "http://brentax.com/",
         "image": "images/logoBrentax.jpeg",
-        "membership": ""
+        "membership": "Gold"
     },
     {
         "name": "Avenue Animal Hospital",
@@ -47,7 +47,7 @@
         "phone": "506-633-1885",
         "website": "https://www.avenueanimalhospital.com/",
         "image": "images/logoAveHospital.jpg",
-        "membership": ""
+        "membership": "Bronze"
     },
     {
         "name": "Rothesay Netherwood School",
@@ -55,7 +55,7 @@
         "phone": "506-847-8224",
         "website": "https://www.rns.cc/",
         "image": "images/logoRNetherwood.png",
-        "membership": ""
+        "membership": "Bronze"
     },
     {
         "name": "Riverside Country Club",
@@ -63,7 +63,7 @@
         "phone": "506-847-7545",
         "website": "https://www.riversidecountryclub.ca/",
         "image": "images/Logo-Riverside-Gold.jpg",
-        "membership": ""
+        "membership": "Silver"
     },
     {
         "name": "Foghorn Brewing Company",
@@ -71,7 +71,7 @@
         "phone": "506-216-7000",
         "website": "https://drinkfoghorn.ca/",
         "image": "images/logoFoghorn.webp",
-        "membership": ""
+        "membership": "Bronze"
     }
 
 ]

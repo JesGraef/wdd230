@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discovery Page</title>
-    <meta name="description" content="This contains demographic and statistics information about the town of Rothesay.">
+    <title>Chamber Home Page</title>
+    <meta name="description" content="This is the home page of my Chamber website..">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Rowdies&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
     <script src="scripts/main.js" defer></script>
-    <script src="scripts/discover.js" defer></script>
 </head>
 <body>
     <header>
@@ -23,10 +22,10 @@
             <nav>
                 <ul id="primaryNav">
                     <li><a href="index.html">Home</a></li>
-                    <li><a class="active" href="discover.html">Discover</a></li>
+                    <li><a href="discover.html">Discover</a></li>
                     <li><a href="join.html">Join</a></li>
                     <li><a href="directory.html">Directory</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a class="active" href="contact.html">Contact</a></li>
                 </ul>
             </nav>
             <div class="social">
@@ -43,24 +42,30 @@
             <aside></aside>
         </section>
     </header>
-    <main class="discover">
-        <img class="hover" src="images/placeholder.png" data-src="images/discover1.jpg" alt="people">
-        <p>In 2021, the population in Rothesay is “11,977 living in 4,873 of its 5,007 total private dwellings". 
-            It has a land area of 34.59 km2 (13.36 sq mi) and the elevation is 75 meters above sea level.</p>
-        <img class="hover" src="images/placeholder.gif" data-src="images/discover2.jpg" alt="boats">
-        <p>In the summer time, Rothesay is a beautiful place to "enjoy local park areas, beach sites, wharves, 
-            hiking trails and several playground areas for children, in addition to a thriving commercial district."</p>
-        <img class="hover" src="images/placeholder.gif" data-src="images/discover3.jpg" alt="fall">
-        <p>Fall is a very popular time anywhere in the Maritimes where people from bigger cities take some time 
-            off to enjoy. Here in Rothesay, is a perfect place to enjoy nature.</p>
-        <img class="hover" src="images/placeholder.gif" data-src="images/discover4.jpg" alt="rolling hills">
-        <p>Rothesay is "one of the most attractive living environments in Atlantic Canada When you're driving 
-            around the area, this is the nature you'll enjoy.</p>
-        <img class="hover" src="images/placeholder.gif" data-src="images/discover5.jpg" alt="icy place">
-        <p>Here in the true north, Canadians have lots of activities during the winter. One of the popular 
-            activity is ice fishing and here in Rothesay, at the Renforth Wharf is a perfect place to have a 
-            "superior ice fishing experience". </p>
-        <p><span id="visits"></span></p>
+    <main>
+        <div class="contact">
+            <hr />
+            <h1>Contact Us</h1>
+            <h4>The Rothesay Chamber</h4>
+            <p>70 Hampton Road</p>
+            <p>Rothesay, NB E2E 5Y2</p><br>
+            <p>(506) 123-456</p>
+            <img class="rothesay" src="images/rothesay.jpeg" alt="Rothesay Town Hall">
+            <hr />
+        </div>
+
+        <h1>CONTACT FORM</h1>
+        <p>*Indicates required field</p>
+        <form method="get" action="contactus.html">
+            <fieldset>
+                <label class="top">Name* <input type="text" name="name" required></label>
+                <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                <label class="top">Question/Concern*<textarea name="comments" required></textarea></label>
+		        <input type="hidden" id="dateTime">
+            </fieldset>
+            
+            <input type="submit" value="Send Question" class="submitBtn">
+        </form>
     </main>
     <footer>
         <section class="footers">
@@ -74,12 +79,12 @@
                 <p>info@rothesaychamber.org</p>
                 <p>(506) 123-456</p>
                 <a class='location' href="https://www.rothesay.ca/">📍 Location Map</a>
-        
             </div>
         </section>
         <section>
             <p class="footer1">&copy; <span id="year"></span> The Rothesay Chamber |  Jessa Graef  |  WDD 230 Project | Last Updated: <span id="modified"></span></p>
         </section>
+
     </footer>
 </body>
 </html>
