@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
     <script src="scripts/main.js" defer></script>
+    <script src="scripts/practice.js" defer></script>
 </head>
 <body>
     <header>
@@ -43,29 +44,42 @@
         </section>
     </header>
     <main>
-        <div class="contact">
+        <img class="rothesay" src="images/rothesay.jpeg" alt="Rothesay Town Hall">
+        <div class="contactus">
+            <br>
+            <br>
             <hr />
             <h1>Contact Us</h1>
             <h4>The Rothesay Chamber</h4>
             <p>70 Hampton Road</p>
             <p>Rothesay, NB E2E 5Y2</p><br>
             <p>(506) 123-456</p>
-            <img class="rothesay" src="images/rothesay.jpeg" alt="Rothesay Town Hall">
+            <p>rothesay@chamber.org</p>
             <hr />
+            <br>
+            <br>
         </div>
 
-        <h1>CONTACT FORM</h1>
+        <h1 class="contactForm">CONTACT FORM</h1>
         <p>*Indicates required field</p>
         <form method="get" action="contactus.html">
             <fieldset>
                 <label class="top">Name* <input type="text" name="name" required></label>
                 <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
-                <label class="top">Question/Concern*<textarea name="comments" required></textarea></label>
+                <label class="top">Question/Concern* <textarea name="comments" required></textarea></label>
 		        <input type="hidden" id="dateTime">
             </fieldset>
             
             <input type="submit" value="Send Question" class="submitBtn">
         </form>
+
+        <div class="main_grid2" id="weather">
+            <h3>Weather</h3>
+            <!-- <img id='weatherPic' src="" alt="Weather picture"> -->
+            <span id="temperature"></span>
+            <p id="tempdesc"></p>
+            <p><span>Humidity: </span> <span id="humidity"></span></p>
+        </div>
     </main>
     <footer>
         <section class="footers">
@@ -84,7 +98,7 @@
         <section>
             <p class="footer1">&copy; <span id="year"></span> The Rothesay Chamber |  Jessa Graef  |  WDD 230 Project | Last Updated: <span id="modified"></span></p>
         </section>
-
+       
     </footer>
 </body>
 </html>
