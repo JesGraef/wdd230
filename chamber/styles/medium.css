@@ -43,15 +43,17 @@
     .hover:hover {
         box-shadow: 0 0 50px #333;
     }
-    /* main div section{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-        grid-gap: 5px;
-        grid-column: 1/3;
-        grid-row: 3/4;
-        height: 100%;
-    }*/
+
+    /* Discovery Page */
+  
+    .discover p {
+        margin-left: 100px;
+        text-align: left;
+    }
+    .discover img { 
+        margin: 30px;
+    }
+
     /* Directory Page */
     .list section {
         display: grid;
@@ -59,5 +61,6 @@
         margin: 0;
         padding: 0.25rem;
     }
+
 } 
 
