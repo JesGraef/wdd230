@@ -41,7 +41,7 @@ fetch('./data.json')
             card.appendChild(url);
           
     
-            cards.appendChild(card); 
+            cards.appendChild(card);  
         }) // end of forEach loop
     } // end of function expression
 

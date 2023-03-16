@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamber Home Page</title>
+    <title>Contact Page</title>
     <meta name="description" content="This is the home page of my Chamber website..">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Rowdies&display=swap" rel="stylesheet">
@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
     <script src="scripts/main.js" defer></script>
-    <script src="scripts/practice.js" defer></script>
 </head>
 <body>
     <header>
@@ -59,9 +58,12 @@
             <br>
             <br>
         </div>
-
-        <h1 class="contactForm">CONTACT FORM</h1>
-        <p>*Indicates required field</p>
+        <div class="contactInfo">
+        <!-- <h1 class="contactForm">CONTACT FORM</h1>
+        <p>*Indicates required field</p> -->
+        <br>
+        <p class="getInTouch">Get in Touch</p>
+        <hr />
         <form method="get" action="contactus.html">
             <fieldset>
                 <label class="top">Name* <input type="text" name="name" required></label>
@@ -72,13 +74,6 @@
             
             <input type="submit" value="Send Question" class="submitBtn">
         </form>
-
-        <div class="main_grid2" id="weather">
-            <h3>Weather</h3>
-            <!-- <img id='weatherPic' src="" alt="Weather picture"> -->
-            <span id="temperature"></span>
-            <p id="tempdesc"></p>
-            <p><span>Humidity: </span> <span id="humidity"></span></p>
         </div>
     </main>
     <footer>

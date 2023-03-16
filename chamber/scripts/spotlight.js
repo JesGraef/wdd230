@@ -3,9 +3,14 @@ fetch('./data.json')
     .then((data) => displayDirectory(data));
 
     const displayDirectory = (data) => {
-        const cards = document.querySelector('div.grid'); // select the output container element
-    
-        data.forEach((directory) => {
+        const test = data.filter(item => item.membership.includes('l'));
+        const random1 = getRandomInt(4);
+        delete test[random1];
+        const random2 = getRandomInt(3);
+        delete test[random2];
+        const cards = document.querySelector('.spotlight'); // select the output container element
+
+        test.forEach((directory) => {
             // Create elements to add to the div.grid element
             let card = document.createElement('section');
             let portrait = document.createElement('img');
@@ -45,22 +50,6 @@ fetch('./data.json')
         }) // end of forEach loop
     } // end of function expression
 
-
-const gridbutton = document.querySelector("#grid");
-const listbutton = document.querySelector("#list");
-const display = document.querySelector(".grid");
-
-// The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
-
-gridbutton.addEventListener("click", () => {
-	// example using arrow function
-	display.classList.add("grid");
-	display.classList.remove("list");
-});
-
-listbutton.addEventListener("click", showList); // example using defined function
-
-function showList() {
-	display.classList.add("list");
-	display.classList.remove("grid");
-}
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+    }

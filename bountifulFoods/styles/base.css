@@ -10,11 +10,6 @@ body {
 h1 {
     font-family: 'Berkshire Swash', Arial, sans-serif;
 }
-
-/* #hero {
-   display: grid;
-   grid-template-columns: 1fr 1fr 1fr 1fr; 
-} */
 #hero-img {
     width: 100%;
 }
@@ -22,6 +17,20 @@ footer {
 	font-size: 1.4em;
 	padding: 10px;
 	text-align: center;
+}
+.footers {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+	text-align: left;
+	padding: 20px;
+}
+.footer {
+	text-align: center;
+	background-color: #BC4749;
+	color: white;
+	width: 98%;
+	margin: 0 auto;
 }
 
 /* Home Page - Create Drink */
@@ -88,13 +97,13 @@ footer {
 }
 
 nav, footer {
-	/* background-color: tomato; */
+	background-color: tomato;
 	/* background-color: #ffff00; */
 	/* background-color: #8DB600; */
 	/* background-color: #ffaa00; */
 	/* background-color: #72ce27; */
 	/* background-color: #ff7b00; */
-	background-color: #ff7b00;
+	/* background-color: #ff7b00; */
 
 }
 .navigation {
