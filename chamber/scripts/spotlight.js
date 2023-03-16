@@ -4,10 +4,10 @@ fetch('./data.json')
 
     const displayDirectory = (data) => {
         const test = data.filter(item => item.membership.includes('l'));
-        const random1 = getRandomInt(4);
-        delete test[random1];
-        const random2 = getRandomInt(3);
-        delete test[random2];
+        // const random1 = getRandomInt(4);
+        // delete test[random1];
+        // const random2 = getRandomInt(3);
+        // delete test[random2];
         const cards = document.querySelector('.spotlight'); // select the output container element
 
         test.forEach((directory) => {
