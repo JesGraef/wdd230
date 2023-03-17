@@ -6,7 +6,9 @@ body {
     font-family: 'Poppins', Arial, sans-serif;
 }
 .active {
-    background-color: #d2d3d2;
+    /* background-color: #d2d3d2; */
+    /* background-color: #dfdfdf; */
+    background-color: #dfdfdf;
 }
 h1 {
     font-family: 'Sriracha', Arial, sans-serif;
@@ -209,6 +211,9 @@ nav ul {
 #primaryNav a:hover, #primaryNav a:active {
     color: white;
     background-color: #53851D;
+}
+#primaryNav li a {
+    color: black;
 }
 #primaryNav a {
     display: block;
