@@ -391,13 +391,28 @@ div.contactInfo {
 .getInTouch {
     font-size: 30px;
 }
-
-/* Spotlight */
-/* .main_grid5 {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: 10px;
-    padding: 20px;
-    font-size: .75rem;
-    text-align: center;    
-} */
+.directors {
+    margin-top: 50px;
+    text-align: center;
+}
+#background {
+    display: block;
+    height: auto;
+    text-align: center;
+}
+.rivers-card, .camping-card, .rapids-card { 
+    margin: 50px auto;
+    width: 60%;
+}
+.card-img {
+    /* border: 10px solid #459b79; */
+    border: 10px solid #014127;
+    width: 100%;
+    transition: transform .5s;
+    /* box-shadow: 5px 5px 10px #6f7364; */
+    box-shadow: 5px 5px 10px #c3d78c;
+}
+.card-img:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}

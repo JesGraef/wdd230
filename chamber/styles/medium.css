@@ -89,5 +89,29 @@
         grid-column: 7/10;
         grid-row: 6/7;
     }
+    #background {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+       
+    }
+    .rivers-card {
+        /* margin: 200px; */
+        grid-column: 2/4;
+     
+    }
+    .camping-card {
+        /* margin: 200px 0; */
+        grid-column: 5/7;
+     
+    }
+    .rapids-card {
+        /* margin: 200px 0; */
+        grid-column: 8/10;
+      
+    }
+    .rivers-card, .camping-card, .rapids-card { 
+        margin: 50px auto;
+        width: 100%;
+    }
 } 
 
