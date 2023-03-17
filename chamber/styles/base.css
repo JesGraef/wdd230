@@ -405,12 +405,11 @@ div.contactInfo {
     width: 60%;
 }
 .card-img {
-    /* border: 10px solid #459b79; */
-    border: 10px solid #014127;
+    /* border: 5px solid #459b79; */
     width: 100%;
     transition: transform .5s;
     /* box-shadow: 5px 5px 10px #6f7364; */
-    box-shadow: 5px 5px 10px #c3d78c;
+    box-shadow: 5px 5px 10px #394e01;
 }
 .card-img:hover {
     opacity: .6;
