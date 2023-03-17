@@ -3,14 +3,23 @@ fetch('./data.json')
     .then((data) => displayDirectory(data));
 
     const displayDirectory = (data) => {
-        const test = data.filter(item => item.membership.includes('l'));
-        // const random1 = getRandomInt(4);
-        // delete test[random1];
-        // const random2 = getRandomInt(3);
-        // delete test[random2];
+        const test = data.filter(item => ["Gold", "Silver"].includes(item.membership));
+
+        const businesses = [];
+        const random1 = getRandomInt(test.length);
+        businesses[0] = test[random1];
+        delete test[random1];
+
+        const random2 = getRandomInt(test.length);
+        businesses[1] = test[random2];
+        delete test[random2];
+
+        const random3 = getRandomInt(test.length);
+        businesses[2] = test[random3];
+
         const cards = document.querySelector('.spotlight'); // select the output container element
 
-        test.forEach((directory) => {
+        businesses.forEach((directory) => {
             // Create elements to add to the div.grid element
             let card = document.createElement('section');
             let portrait = document.createElement('img');

@@ -27,7 +27,10 @@
 	.spotlight {
 		grid-row: 1/4;
 	}
-	.main_grid7 {
+	/* .main_grid7 {
+		display: block;
+	} */
+	.spotlight section:nth-child(3) {
 		display: block;
 	}
 	#event {

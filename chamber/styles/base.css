@@ -141,7 +141,7 @@ nav {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 10px;
-    padding: 20px;
+    padding: 15px;
     /* font-size: .75rem; */
     font-size: 1rem;
     text-align: center;
@@ -150,6 +150,9 @@ nav {
     /* box-shadow: 0 0 50px rgb(75, 255, 4); */
     box-shadow: 0 0 50px rgb(255, 255, 255);
     padding: 15px;
+}
+.spotlight section:nth-child(3) {
+    display: none;
 }
 .main_grid1, .main_grid2, .main_grid3, .main_grid4 {
     padding: 10px;  

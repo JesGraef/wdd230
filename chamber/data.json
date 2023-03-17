@@ -8,7 +8,6 @@
         "membership": "Gold"
     },
     {
-
         "name": "Cochran's Country Market",
         "address": "106 Hampton Rd, Rothesay, NB E2E 2P8",
         "phone": "506-849-4840",
@@ -23,7 +22,7 @@
         "phone": "506-847-8673",
         "website": "https://kennebecasisselfstorage.ca/",
         "image": "images/logoKenStorage.png",
-        "membership": "Bronze"
+        "membership": "Gold"
     },
     {
         "name": "Rothesay Laser Clinic",
@@ -39,7 +38,7 @@
         "phone": "506-849-4040",
         "website": "http://brentax.com/",
         "image": "images/logoBrentax.jpeg",
-        "membership": "Bronze"
+        "membership": "Gold"
     },
     {
         "name": "Avenue Animal Hospital",
@@ -63,7 +62,7 @@
         "phone": "506-847-7545",
         "website": "https://www.riversidecountryclub.ca/",
         "image": "images/Logo-Riverside-Gold.jpg",
-        "membership": "Bronze"
+        "membership": "Silver"
     },
     {
         "name": "Foghorn Brewing Company",
@@ -71,7 +70,7 @@
         "phone": "506-216-7000",
         "website": "https://drinkfoghorn.ca/",
         "image": "images/foghorn.png",
-        "membership": "Bronze"
+        "membership": "Silver"
     }
 
 ]
