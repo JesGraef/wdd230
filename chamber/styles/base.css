@@ -6,8 +6,6 @@ body {
     font-family: 'Poppins', Arial, sans-serif;
 }
 .active {
-    /* background-color: #d2d3d2; */
-    /* background-color: #dfdfdf; */
     background-color: #dfdfdf;
 }
 h1 {
@@ -126,30 +124,15 @@ nav {
     width: 100%;
     background-color: #52b788;
 }
-/* .main_grid5, .main_grid6, .main_grid7 {
-    text-align: center;
-    border: 1px solid rgb(148, 147, 147);
-    box-shadow: 0 0 50px rgb(75, 255, 4);
-    width: 100%;
-} */
-/* .spotlight section {
-    border: 1px solid rgb(148, 147, 147);
-    box-shadow: 0 0 50px rgb(75, 255, 4);
-    margin: 10px;
-    padding: 5px;
-    text-align: center;
-} */
 .spotlight {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 10px;
     padding: 15px;
-    /* font-size: .75rem; */
     font-size: 1rem;
     text-align: center;
 }
 .spotlight section {
-    /* box-shadow: 0 0 50px rgb(75, 255, 4); */
     box-shadow: 0 0 50px rgb(255, 255, 255);
     padding: 15px;
 }
@@ -162,9 +145,6 @@ nav {
 } 
 .main_grid4 {
     text-align: center;
-}
-.main_grid7 {
-    display: none;
 }
 .green {
     color: #238055;
@@ -337,12 +317,14 @@ fieldset .membership {
 .list {
 	display: flex;
 	flex-direction: column;
+    padding: 1rem;
 }
 
 .list section {
 	display: block;
     text-align-last: left;
 	padding: 1rem;
+    line-height: 1.5em;
 }
 
 .list section > * {
@@ -377,10 +359,6 @@ textarea {
     width: 320px;
     height: 100px;
 }
-/* h1.contactForm {
-    text-align: center;
-    margin-top: 150px;
-} */
 div.contactInfo {
     background-color: #f5f2ef;
     width: 70%;
@@ -400,15 +378,13 @@ div.contactInfo {
     height: auto;
     text-align: center;
 }
-.rivers-card, .camping-card, .rapids-card { 
+.monkey1, .monkey2, .monkey3 { 
     margin: 50px auto;
     width: 60%;
 }
 .card-img {
-    /* border: 5px solid #459b79; */
     width: 100%;
     transition: transform .5s;
-    /* box-shadow: 5px 5px 10px #6f7364; */
     box-shadow: 5px 5px 10px #394e01;
 }
 .card-img:hover {
