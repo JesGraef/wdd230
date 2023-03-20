@@ -12,7 +12,7 @@ fetch('./data.json')
             let name = document.createElement('p');
             let address = document.createElement('p');
             let phone = document.createElement('p');
-            let url = document.createElement('p');
+            let url = document.createElement('a');
 
             // Build the p content to show the business name
             name.textContent = directory.name;
