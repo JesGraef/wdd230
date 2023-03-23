@@ -114,33 +114,38 @@ nav {
     color: black;
 }
 .main {
-    grid-gap: 5px;
+    grid-gap: 10px;
     color: white;
     opacity: .9;
 }
+main {
+    margin-left: 10px;
+}
 .main div {
-    margin-top: 20px;
-    margin-left: 20px;
+    margin-top: 10px;
     width: 100%;
     background-color: #52b788;
 }
 .spotlight {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 10px;
-    padding: 15px;
+    grid-gap: 1em;
+    padding: 1em;
     font-size: 1rem;
     text-align: center;
 }
 .spotlight section {
     box-shadow: 0 0 50px rgb(255, 255, 255);
-    padding: 15px;
+    padding: 1em;
 }
 .spotlight section:nth-child(3) {
     display: none;
 }
+.spotlight a {
+    color: black;
+}
 .main_grid1, .main_grid2, .main_grid3, .main_grid4 {
-    padding: 10px;  
+    padding: 1em; 
     place-items: center;
 } 
 .main_grid4 {

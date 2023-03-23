@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
     <script src="scripts/main.js" defer></script>
+    <script src="scripts/fruits.js" defer></script>
 </head>
 <body>
     <header>
@@ -20,9 +21,9 @@
             <nav>
                 <ul class="navigation">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="#">Discover</a></li>
                     <li><a class="active" href="fresh.html">Fresh</a></li>
                     <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
             <!-- <div class="social">
@@ -49,17 +50,6 @@
             </section>
         </section>
        
-        <!-- <form action="">
-            <label for="cars">Choose a car:</label>
-            <select name="cars" id="cars">
-              <option value="volvo">Volvo</option>
-              <option value="saab">Saab</option>
-              <option value="opel">Opel</option>
-              <option value="audi">Audi</option>
-            </select>
-            <br><br>
-            <input type="submit" value="Submit">
-          </form> -->
     
           <h1 class="request">Create Your Specialty Drink!</h1>
         <form method="get" action="thankyou.html">
@@ -68,21 +58,31 @@
                 <label class="top">Email* <input type="email" name="email" required></label>
                 <label class="top">Phone* <input type="tel" name="phone" placeholder="123-456-7890" required></label>
                 <br>
-                <label class="top" for="fruits">Please choose 3 fruits:</label>
-                <select name="fruits" id="fruits" required>
-                    <option value="apple">Apple</option>
-                    <option value="banana">Banana</option>
-                    <option value="cantaloupe">Cantaloupe</option>
+                <label class="top" for="fruits1">Please choose 3 fruits:</label>
+                <select name="fruits" id="fruits1" required>
+                    <option value="">Select first fruit</option>
                 </select>
+                <select name="fruits" id="fruits2" required>
+                    <option value="">Select second fruit</option>
+                </select>
+                <select name="fruits" id="fruits3" required>
+                    <option value="">Select third fruit</option>
+                </select>
+              
                 <br>
                 <br>
                 <label class="top">Any Special Instructions? <textarea name="comments"></textarea></label>
                 <input type="hidden" id="dateTime">
             </fieldset>
 
-            <input type="submit" value="Create Drink" class="submitBtn">
+            <input type="submit" value="Create Drink" class="submitBtn" onsubmit="">
 
         </form> 
+
+        <div>
+            <h2>Total number of drinks submitted:</h2>
+            <p></p>
+        </div>
         
     </main>
     <footer>
