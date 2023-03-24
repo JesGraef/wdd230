@@ -36,7 +36,7 @@ async function apiFetchWeather() {
       const temperature = data.main.temp;
       
       document.querySelector('#temperature').textContent = `${Math.round(temperature)}\u00B0C`;
-      document.querySelector('#tempdesc').textContent = data.weather[0].description.toUpperCase();
+      document.querySelector('#tempdesc').textContent = data.weather[0].description;
       document.querySelector('#humidity').textContent = data.main.humidity;
       document.querySelector('#weatherPic').src = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
   
@@ -51,8 +51,11 @@ async function apiFetchWeather() {
       if (index < 3) {
         let date = new Date(weather.dt_txt); console.log('date', date)
         document.querySelector(`#weather${index + 1} .day span`).textContent = weekday[date.getDay()];
-        document.querySelector(`#weather${index + 1} .temperature span`).textContent = weather.main.temp;
         document.querySelector(`#weather${index + 1} .weatherIcon`).src = `https://openweathermap.org/img/w/${weather.weather[0].icon}.png`;
+        document.querySelector(`#weather${index + 1} .temperature span`).textContent = `${Math.round(weather.main.temp)}\u00B0C`;
+        document.querySelector(`#weather${index + 1} .tempdescrip`).textContent = weather.weather[0].description;
+        document.querySelector(`#weather${index + 1} .humid`).textContent = weather.main.humidity;
+       
       }
     });
   }

@@ -13,4 +13,41 @@
 	#menu {
 		display: none;
 	}
+	/* Weather */
+	
+	.forecast {
+		display: flex;
+	}
+	
+	/* Drink */
+	.home-grid {
+		display: grid;
+		grid-template-columns: repeat(10, 1fr)
+	}
+	.msg {
+		width: 100%;
+		grid-column: 6/10;
+		grid-row: 6/7;
+    }
+	.drink {
+		width: 100%;
+		grid-column: 2/7;
+		grid-row: 5/8;
+	}
+
+	/* About Us */
+	.about p {
+        margin-left: 100px;
+        text-align: left;
+    }
+    .about img { 
+        margin: 30px;
+    }
+	.maps {
+		display: flex;
+	}
+	.mapPic {
+		margin-left: 20px;
+		margin-top: 20px;
+	}
 }

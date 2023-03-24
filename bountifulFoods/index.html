@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
     <script src="scripts/main.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
 </head>
 <body>
     <header>
@@ -21,8 +22,7 @@
                 <ul class="navigation">
                     <li><a class="active" href="index.html">Home</a></li>
                     <li><a href="fresh.html">Fresh</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="about.html">About Us</a></li>
                 </ul>
             </nav>
             <!-- <div class="social">
@@ -48,32 +48,44 @@
             welcome to enjoy our fresh products in our main office in Carlsbad or through 
             our food trucks all over the coastal area from LA to San Diego. Order now 
             through phone or website!</p>
-        
-<!-- Weather -->
-        <div class="weather-cards">
-            <div id="weather">
-                <h3>Today's Weather</h3>
-                <img id='weatherPic' src="" alt="Weather picture">
-                <span id="temperature"></span>
-                <p id="tempdesc"></p>
-                <p><span>Humidity: </span> <span id="humidity"></span></p>
-            </div class="forecast">
-            <div id="weather1">
-                <h3 class="day">Day: <span></span></h3>
-                <p class="temperature">Temperature: <span></span></p>
-                <img class='weatherIcon' src="" alt="Weather Icon">
+
+            
+    <!-- Weather -->
+        <div id="background">
+            <!-- <img class="img" src="images/d.jpg" alt="Blue Sky"> -->
+            <div class="forecast">
+                <div id="weather">
+                    <h3 class="weatherTitle">Weather Today in Carlsbad, California:</h1>
+                    <div class="one">
+                        <img id='weatherPic' src="#" alt="Weather picture">
+                        <span id="temperature"></span>
+                    </div>
+                    <p id="tempdesc"></p>
+                    <p><span>Humidity: </span> <span id="humidity"></span></p>
+                </div>
+                <div id="weather1">
+                    <h3 class="day"><span> </span></h3>
+                    <img class='weatherIcon' src="#" alt="Weather Icon">
+                    <p class="temperature"> <span></span></p>
+                    <p class="tempdescrip"></p>
+                    <p><span>Humidity: </span> <span class="humid"></span></p>
+                </div>
+                <div id="weather2">
+                    <h3 class="day"> <span></span></h3>
+                    <img class='weatherIcon' src="#" alt="Weather Icon">
+                    <p class="temperature"> <span></span></p>
+                    <p class="tempdescrip"></p>
+                    <p><span>Humidity: </span> <span class="humid"></span></p>
+                </div>
+                <div id="weather3">
+                    <h3 class="day"> <span></span></h3>
+                    <img class='weatherIcon' src="#" alt="Weather Icon">
+                    <p class="temperature"> <span></span></p>
+                    <p class="tempdescrip"></p>
+                    <p><span>Humidity: </span> <span class="humid"></span></p>
+                </div>
             </div>
-            <div id="weather2">
-                <h3 class="day">Day: <span></span></h3>
-                <p class="temperature">Temperature: <span></span></p>
-                <img class='weatherIcon' src="" alt="Weather Icon">
-            </div>
-            <div id="weather3">
-                <h3 class="day">Day: <span></span></h3>
-                <p class="temperature">Temperature: <span></span></p>
-                <img class='weatherIcon' src="" alt="Weather Icon">
-            </div>
-        </div>
+        </div>    
     
 
     </main>

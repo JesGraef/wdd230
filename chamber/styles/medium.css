@@ -89,7 +89,6 @@
     #background {
         display: grid;
         grid-template-columns: repeat(10, 1fr);
-       
     }
     .monkey1 {
         grid-column: 2/4;
