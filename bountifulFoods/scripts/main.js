@@ -13,14 +13,23 @@ hambutton.addEventListener('click', () => {
 // Site Last Updated
 const date = new Date(document.lastModified);
 const shortDate = date.toLocaleDateString('en-US');
-// const hours = date.getHours();
-// const min = date.getMinutes();
-// const sec = date.getSeconds();
-// const fullDate = `${shortDate} ${hours}:${min}:${sec}`
 document.getElementById("modified").innerHTML = shortDate;
 
 
 // Hidden element on Join Page
+// const today = new Date();
 // document.querySelector('#dateTime').value = today;
+
+// Drink Submissions
+const submissionsDisplay = document.querySelector(".submissions");
+let numsubmissions = Number(window.localStorage.getItem("submission"));
+if (numsubmissions !== 0) {
+    submissionsDisplay.textContent = numsubmissions;
+} else {
+    submissionsDisplay.textContent = "0"
+}
+
+numsubmissions++;
+localStorage.setItem("submission", numsubmissions);
 
 

@@ -40,22 +40,20 @@
     </header>
     <main>
         <section class="home-grid">
-            <!-- <div id="background"></div> -->
             <img class="drink" src="images/drinks.jpg" alt="Fruit drinks">
             <section class="msg">
-                <h1>Make Your Own Drink</h2>
-                <p>Enjoy your own favorite fruit drink by choosing from our vast selection of healthy and delicious organic grown fruits, made fresh and ready to serve! </p>
-                <a class='create' href="fresh.html">Create Drink</a>
+                <h1>Customize Your Drink!</h2>
+                <p>Refresh your day by trying our customizable specialty drinks! You can choose from our vast selection of healthy and delicious organic fruits, made fresh and ready to serve! </p>
             </section>
         </section>
        
     
           <h1 class="request">Create Your Specialty Drink!</h1>
-        <form method="get" action="thankyou.html">
+        <form method="post" action="fresh.html">
             <fieldset>
-                <label class="top">First Name* <input type="text" name="fname" required></label>
-                <label class="top">Email* <input type="email" name="email" required></label>
-                <label class="top">Phone* <input type="tel" name="phone" placeholder="123-456-7890" required></label>
+                <label class="top">First Name* <input type="text" name="fname" id="name" required></label>
+                <label class="top">Email* <input type="email" name="email" id="email" required></label>
+                <label class="top">Phone* <input type="tel" name="phone" id="phone" placeholder="123-456-7890" required></label>
                 <br>
                 <label class="top" for="fruits1">Please choose 3 fruits:</label>
                 <select name="fruits" id="fruits1" required>
@@ -74,14 +72,14 @@
                 <input type="hidden" id="dateTime">
             </fieldset>
 
-            <input type="submit" value="Create Drink" class="submitBtn" onsubmit="">
+            <input type="submit" value="Create Drink" class="submitBtn" onclick="displayInput(store())">
+            <!-- Output Form Details -->
+            <p id="display_name"></p>
+            <p id="display_email"></p>
+            <p id="display_phone"></p>
+            <!-- <button onclick="store()" type="button" class="submitBtn">Create Drink</button> -->
 
         </form> 
-
-        <div>
-            <h2>Total number of drinks submitted:</h2>
-            <p></p>
-        </div>
         
     </main>
     <footer>
@@ -95,8 +93,8 @@
             <div class="contact">
                 <p>bfc@gmail.com</p>
                 <p>(760) 123-4567</p>
-                <a class='location' href="https://www.carlsbadca.gov/">📍 Location Map</a>
-                <p>The weather is based on <a href="https://openweathermap.org/">OpenWeatherMap</a>.</p>
+                <a class="links" href="https://www.carlsbadca.gov/">📍 Location Map</a>
+                <p>The weather is based on <a class="links" href="https://openweathermap.org/">OpenWeatherMap</a>.</p>
             </div>
             
         </section>

@@ -11,35 +11,44 @@ h1 {
     font-family: 'Berkshire Swash', Arial, sans-serif;
     
 }
-#title {
-    position: absolute;
-    top: 50px;
-    left: 50px;
-    font-size: 7em;
+#hero {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    /* grid-template-rows: 2.5fr; */
 }
-#hero-img, .aboutHero {
+.links {
+    color: black;
+}
+#hero-img {
+    width: 100%;
+    grid-column: 1/4;
+    grid-row: 1/3;
+}
+.home-title {
+    margin-left: .2em;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.aboutHero {
     width: 100%;
 }
 .active {
-    /* background-color: #f0f032; */
 	background-color: white;
 }
-/* #title {
-	position: relative;
-	width: 30%;
-	color: gray;
-} */
 footer {
 	font-size: 1.4em;
 	padding: 10px;
 	text-align: center;
 }
+p.footer {
+    font-size: .8em;
+}
 .footers {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-	text-align: left;
+    display: block;
+    /* justify-content: center; */
+    /* align-items: center; */
 	padding: 20px;
+    font-size: .8em;
 }
 .footer {
 	text-align: center;
@@ -104,9 +113,7 @@ footer {
 	font-weight:700;
 	text-decoration: none;
 	padding: .5rem .75rem;
-	/* background-color: #eee; */
     background-color: #ff7b00;
-	/* color: #000; */
 	color: white;
 }
 
@@ -116,7 +123,6 @@ footer {
 
 nav, footer {
 	background-color: #ff7b00;
-
 }
 .navigation {
 	list-style: none;
@@ -200,12 +206,25 @@ form {
 	padding: 0.5rem;
 	align-items: center;
 	margin-bottom: 100px;
+    /* background-image: linear-gradient(
+        to bottom,
+        rgba(248, 236, 8, 0.5),
+        rgba(234, 0, 255, 0.5)); */
+    /* background-image: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255),
+        rgba(255, 149, 10)); */
+    background-image: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255),
+        rgb(239, 221, 27));
 }
 form fieldset {
     margin: 2rem 0;
     border: 1px solid #a99344;
     border-radius: 10px;
     padding: .5rem 2%;
+    
 }
 form legend {
     margin: 0 1rem;
@@ -233,8 +252,10 @@ form label.sbs {
 }
 form input.submitBtn {
     border: none;
-    background-color: #8ee135;
-    color: black;
+    /* background-color: #8ee135; */
+    /* background-color: #aa7607; */
+    background-color: #bb6a08;
+    color: white;
     border-radius: 1rem;
     padding: .75rem 1.5rem;
     margin: auto;
@@ -255,15 +276,20 @@ textarea {
     width: 320px;
     height: 100px;
 }
-
+.label {
+    font-family: 'Berkshire Swash', Arial, sans-serif;
+    font-weight: 700;
+}
+.visits {
+    color: greenyellow;
+}
 /* About Us Page */
 .about {
     margin: 30px;
 }
 .hover {
     width: 100%;
-    filter: blur(0em);
-    transition: filter 0.5s;
+    border-radius: 30px;
 }
 .hover[data-src] {
     filter: blur(0.1em)
@@ -278,9 +304,14 @@ textarea {
     display: block;
     height: auto;
 } */
-#hero-msg h1, #hero-msg h3, #hero-msg p {
+#hear-msg h1, #hear-msg h3, #hear-msg p {
     text-align: center;
-    color: #ff7b00;
+    /* color: #ff7b00; */
+    color: black;
+}
+#hear:hover {
+    /* box-shadow: 0 0 50px rgb(244, 235, 81); */
+    transform: scale(1.03);
 }
 /* #hero-box {
     display: block;
@@ -289,22 +320,17 @@ textarea {
     width:100%;
     margin-bottom: 50px;;
 }
-#hero {
+#hear {
     display: grid;
     grid-template-columns: 2fr 3fr 1fr;
 }
-#hero-box {
+#hear-box {
     grid-column: 1/4;
     /* grid-row: 1/3; */
     grid-row: 1/6;
 }
-.home-title {
-    font-size: 2em;
-    color: black;
-    margin-top: 10px;
-}
 
-#hero-msg {
+#hear-msg {
     grid-column: 2/3;
     /* grid-row: 1/2; */
     grid-row: 2/5;
@@ -313,4 +339,7 @@ textarea {
 .maps {
     display: block;
 }
+/* .about p {
+    color:#a35201;
+} */
  
