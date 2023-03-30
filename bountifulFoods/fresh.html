@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
     <script src="scripts/main.js" defer></script>
-    <script src="scripts/fruits.js" defer></script>
+    <script src="scripts/fresh.js" defer></script>
 </head>
 <body>
     <header>
@@ -23,19 +23,21 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a class="active" href="fresh.html">Fresh</a></li>
                     <li><a href="about.html">About Us</a></li>
+                    <div class="social">
+                        <a href="https://facebook.com" target="_blank">
+                            <img src="images/fb.png" alt="fb icon">
+                        </a>
+                        <a href="https://instagram.com" target="_blank">
+                            <img src="images/linkedin.png" alt="instagram icon">
+                        </a>
+                        <a href="https://twitter.com" target="_blank">
+                            <img src="images/twit.png" alt="twitter icon">
+                        </a>
+                    </div>  
                 </ul>
+                
             </nav>
-            <!-- <div class="social">
-                <a href="https://facebook.com" target="_blank">
-                    <img src="images/fb.png" alt="fb icon">
-                </a>
-                <a href="https://instagram.com" target="_blank">
-                    <img src="images/linkedin.png" alt="instagram icon">
-                </a>
-                <a href="https://twitter.com" target="_blank">
-                    <img src="images/twit.png" alt="twitter icon">
-                </a>
-            </div>   -->
+            
         </section>
     </header>
     <main>
@@ -49,7 +51,7 @@
        
     
           <h1 class="request">Create Your Specialty Drink!</h1>
-        <form method="post" action="fresh.html">
+        <form onsubmit="drinkSubmission(); return false;">
             <fieldset>
                 <label class="top">First Name* <input type="text" name="fname" id="name" required></label>
                 <label class="top">Email* <input type="email" name="email" id="email" required></label>
@@ -68,15 +70,23 @@
               
                 <br>
                 <br>
-                <label class="top">Any Special Instructions? <textarea name="comments"></textarea></label>
+                <label class="top">Any Special Instructions? <textarea name="comments" id="comments"></textarea></label>
                 <input type="hidden" id="dateTime">
             </fieldset>
 
-            <input type="submit" value="Create Drink" class="submitBtn" onclick="displayInput(store())">
+            <input type="submit" value="Create Drink" class="submitBtn">
             <!-- Output Form Details -->
-            <p id="display_name"></p>
-            <p id="display_email"></p>
-            <p id="display_phone"></p>
+            <p id="print_name"></p>
+            <p id="print_email"></p>
+            <p id="print_phone"></p>
+            <p id="print_fruit1"></p>
+            <p id="carb1"></p>
+            <p id="print_fruit2"></p>
+            <p id="print_fruit3"></p>
+            <p id="print_comments"></p>
+            <p id="print_orderDate"></p>
+
+
             <!-- <button onclick="store()" type="button" class="submitBtn">Create Drink</button> -->
 
         </form> 

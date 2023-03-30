@@ -20,16 +20,6 @@ document.getElementById("modified").innerHTML = shortDate;
 // const today = new Date();
 // document.querySelector('#dateTime').value = today;
 
-// Drink Submissions
-const submissionsDisplay = document.querySelector(".submissions");
-let numsubmissions = Number(window.localStorage.getItem("submission"));
-if (numsubmissions !== 0) {
-    submissionsDisplay.textContent = numsubmissions;
-} else {
-    submissionsDisplay.textContent = "0"
-}
 
-numsubmissions++;
-localStorage.setItem("submission", numsubmissions);
 
 

@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="styles/large.css">
     <script src="scripts/main.js" defer></script>
     <script src="scripts/weather.js" defer></script>
+    <script src="scripts/submission.js" defer></script>
 </head>
 <body>
     <header>
@@ -23,45 +24,89 @@
                     <li><a class="active" href="index.html">Home</a></li>
                     <li><a href="fresh.html">Fresh</a></li>
                     <li><a href="about.html">About Us</a></li>
+                    <div class="social">
+                        <a href="https://facebook.com" target="_blank">
+                            <img src="images/fb.png" alt="fb icon">
+                        </a>
+                        <a href="https://linkedin.com" target="_blank">
+                            <img src="images/linkedin.png" alt="instagram icon">
+                        </a>
+                        <a href="https://twitter.com" target="_blank">
+                            <img src="images/twit.png" alt="twitter icon">
+                        </a>
+                    </div>  
                 </ul>
+                
             </nav>
-            <!-- <div class="social">
-                <a href="https://facebook.com" target="_blank">
-                    <img src="images/fb.png" alt="fb icon">
-                </a>
-                <a href="https://linkedin.com" target="_blank">
-                    <img src="images/linkedin.png" alt="instagram icon">
-                </a>
-                <a href="https://twitter.com" target="_blank">
-                    <img src="images/twit.png" alt="twitter icon">
-                </a>
-            </div>   -->
+            
         </section>
     </header>
     <div id="hero">
         <img id="hero-img" src="images/a.jpg" alt="Variety of fruits">
         <h1 class="home-title">Bountiful<br/>Foods<br/>Co.</h1>
+         <!-- <picture id="hero-img">
+            <source media="(max-width: 500px)" srcset="images/small.jpg">
+            <source media="(max-width: 1000px)" srcset="images/medium.jpg">
+            <source media="(max-width: 1600px)" srcset="images/a.jpg">
+            <img src="images/a.jpg" alt="Variety of Fruits">
+        </picture> -->
     </div> 
     <main>
-        <!-- <img id="hero-img" src="images/a.jpg" alt="Variety of fruits">
-        <h1 id="title">Bountiful<br/>Foods<br/>Co.</h1> -->
+        <h2 class="main-title">Fresh. Healthy. Organic.</h2>
+        <p class="para">We sell organic fruits and produce, fruits drinks, and fruits bags that are locally grown 
+            in Southern California. Our main office is in Carlsbad but we have food trucks all over 
+            the coastal area from LA to San Diego.</p>
+        
+        <h2 class="fun">Fun Things To Do In Southern California</h2>
+        <section class="cali-grid">
+            <section class="cali-card3">
+                <h1>Los Angeles</h2>
+                <img src="images/hol.jpg" alt="Hollywood sign">
+                <p>It's obvious Los Angeles is one of the most popular places in Southern California. 
+                    The Hollywood sign is a famous tourist destination. 
+                    Because the sign sits on a hill, “it is visible from many parts of Los Angeles.”</p>
+            </section>
+            <section class="cali-card1">
+                <h1>Zuma Beach, Malibu</h2>
+                <img src="images/beach2.jpg" alt="Beach">
+                <p>Southern California is known for its nice and sunny weathers, and being on the coastline, 
+                    the beach is one of the most popular attractions. Zuma Beach in Malibu is a great choice 
+                    for swimming and surfing.</p>
+            </section>
+            <section class="cali-card2">
+                <h1>Santa Monica</h2>
+                <img src="images/fer.jpg" alt="Ferris wheel">
+                <p>The endless choices of activities—zoos, museums, parks, high-end shops, etc makes 
+                    California so special. The Pacific Park in Santa Monica is by the beach. 
+                    The ferris wheel provides you a nice view of the Pacific Ocean.</p>
+            </section>
+        </section>
 
-        <h2>Fresh. Healthy. Organic.</h2>
-        <p>We sell fruits, fruits drinks, fruits bags and produce that are locally grown 
-            in Southern California. We also have suppliers outside the area. Anyone are 
-            welcome to enjoy our fresh products in our main office in Carlsbad or through 
-            our food trucks all over the coastal area from LA to San Diego. Order now 
-            through phone or website!</p>
-        <section class="home-grid">
-            <div class="drink">
-                <p><span class="label">Total number of drinks submitted: </span> <span class="submissions"></span></p>
-            </div>
-            <section class="msg">
-                <h1>Make Your Own Drink</h2>
+        <section class="drink-grid">
+            <section class="home-drink">
+                <h1>Make Your Own Drink!</h2>
+                <img src="images/i.jpg" alt="Fruit drinks">
                 <p>Enjoy your favorite drink by choosing the fruits you like the most! Order now and get a free fruit!</p>
                 <a class='create' href="fresh.html">Create Drink</a>
             </section>
+            <div class="home-msg">
+                <!-- <img class="drink" src="images/j.jpg" alt="Fruit drinks"> -->
+                <p><span class="label">Total number of drinks submitted: </span> <span class="submissions"></span></p>
+            </div> 
         </section>
+
+        <!-- <section class="home-grid" id="home">
+         <img class="drink" src="images/k.jpg" alt="Fruit drinks">
+            <div id="card">
+                <p id="info-drink"><span class="label">Total number of drinks submitted: </span> <span class="submissions"></span></p>
+            </div>
+            <section class="msg" id="drink-border">
+                <h1>Make Your Own Drink!</h2>
+                    <img src="images/i.jpg" alt="Fruit drinks">
+                    <p>Enjoy your favorite drink by choosing the fruits you like the most! Order now and get a free fruit!</p>
+                    <a class='create' href="fresh.html">Create Drink</a>
+            </section>
+        </section>  -->
             
     <!-- Weather -->
         <div id="background">
