@@ -11,6 +11,12 @@
 		text-align: left;
 		padding: 20px;
 	}
+	.social {
+		display: flex;
+	}
+	.navigation img {
+		display: block;
+	}
 	.cali-grid {
 		display: flex; 
 		/* grid-template-columns: repeat(10, 1fr); */

@@ -8,7 +8,10 @@ body {
     font-family: 'Prompt', Arial, sans-serif;
 }
 .social {
-    display: flex;
+    display: none;
+}
+.navigation img {
+    display: none;
 }
 .social img {
     width: 2em;
