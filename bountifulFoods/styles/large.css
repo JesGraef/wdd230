@@ -3,6 +3,9 @@
     .home-title {
         font-size: 8em;
     }
+    .soc img {
+        width: 3em;
+    }
     /* About Us Page */
     .about {
         display: grid;

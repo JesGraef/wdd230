@@ -5,8 +5,8 @@
     }
 	.footers {
 		display: flex;
-		justify-content: space-evenly;
-		align-items: center;
+		/* justify-content: space-evenly; */
+		/* align-items: center; */
 		text-align: left;
 		padding: 20px;
 	}
@@ -15,6 +15,9 @@
 	}
 	.cali-card1, .cali-card2, .cali-card3 {
 		width: 30%;
+	}
+	.soc img {
+		width: 2em;
 	}
 	
 

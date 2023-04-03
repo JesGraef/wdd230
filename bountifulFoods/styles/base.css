@@ -60,8 +60,6 @@ p.footer {
 }
 .footer {
 	text-align: center;
-	/* background-color: #BC4749; */
-    /* background-color:rgba(47, 41, 48, 0.796); */
     background-color: white;
 	color: black;
 	width: 98%;
@@ -166,8 +164,8 @@ nav, footer {
 .navigation li a:hover {
 	/* color: black;
 	background-color: #c3fa10; */
-    color: black;
-    background-color: white; 
+    color: white;
+    background-color: black; 
 }
 
 .show li {
@@ -176,21 +174,30 @@ nav, footer {
 #menu.show::before {
 	content: "X";
 }
-.social img, #display {
-    display: none;
+.soc {
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    width: 10%;
 }
+.soc img {
+    width: 1.5em;
+}
+/* .social img, #display {
+    display: none;
+} */
 /* .navigation .social {
     padding: 0;
     margin: 0;
 } */
-.social img {
+/* .social img {
     width: 2em;
     padding: 0;
     margin: 0;
-}
-.social:hover {
+} */
+/* .social:hover {
     background-color: white;
-}
+} */
 
 /* Fresh Page */
 .home-grid {
