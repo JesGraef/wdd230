@@ -17,12 +17,12 @@ const displayFruitOptions = data => {
         let option2 = document.createElement('option');
         let option3 = document.createElement('option');
         
-        option1.setAttribute('value', fruit.name);
-        option1.textContent = fruit.name;
-        option2.setAttribute('value', fruit.name);
-        option2.setAttribute('label', fruit.name);
-        option3.setAttribute('value', fruit.name);
-        option3.setAttribute('label', fruit.name);
+        option1.value = fruit.name;
+        option1.innerHTML = fruit.name;
+        option2.value = fruit.name;
+        option2.innerHTML = fruit.name;
+        option3.value = fruit.name;
+        option3.innerHTML = fruit.name;
 
         fruitSelect1.appendChild(option1);
         fruitSelect2.appendChild(option2);
@@ -59,9 +59,9 @@ function drinkSubmission() {
 
     document.querySelector("#print_fruit1").innerHTML = `Fruit1: ${fruits1}`;
     document.querySelector("#carb1").innerHTML = `Carbohydrates: ${fruits1Object.nutritions.carbohydrates}`;
-    // document.querySelector("#protein1").innerHTML = `Protein: ${fruits1Object.nutritions.protein}`;
+    document.querySelector("#protein1").innerHTML = `Protein: ${fruits1Object.nutritions.protein}`;
     // document.querySelector("#fat1").innerHTML = `Fat: ${fruits1Object.nutritions.fat}`;
-    // document.querySelector("#cal1").innerHTML = `Calories: ${fruits2Object.nutritions.calories}`;
+    // document.querySelector("#cal1").innerHTML = `Calories: ${fruits1Object.nutritions.calories}`;
     // document.querySelector("#sugar1").innerHTML = `Sugar: ${fruits1Object.nutritions.sugar}`;
 
 
