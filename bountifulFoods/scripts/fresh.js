@@ -18,7 +18,7 @@ const displayFruitOptions = data => {
         let option3 = document.createElement('option');
         
         option1.setAttribute('value', fruit.name);
-        option1.setAttribute('label', fruit.name);
+        option1.textContent = fruit.name;
         option2.setAttribute('value', fruit.name);
         option2.setAttribute('label', fruit.name);
         option3.setAttribute('value', fruit.name);
@@ -44,7 +44,10 @@ function drinkSubmission() {
     const phone = document.querySelector("#phone").value;
     const fruits1 = document.querySelector("#fruits1").value;
 
-    const fruits1Object = fruits.find(item => item.name === fruits1); console.log('fruits1Object', fruits, fruits1, fruits1Object, fruits1Object.nutritions.carbohydrates)
+    // const fruits1Object = fruits.find(item => item.name === fruits1); console.log('fruits1Object', fruits, fruits1, fruits1Object, fruits1Object.nutritions.carbohydrates)
+    const fruits1Object = fruits.find(item => item.name === fruits1);
+    // const fruits2Object = fruits.find(item => item.name === fruits2);
+    // const fruits3Object = fruits.find(item => item.name === fruits3);
 
     const fruits2 = document.querySelector("#fruits2").value;
     const fruits3 = document.querySelector("#fruits3").value;
@@ -53,8 +56,15 @@ function drinkSubmission() {
     document.querySelector("#print_name").innerHTML = `Name: ${name}`;
     document.querySelector("#print_email").innerHTML = `Email: ${email}`;
     document.querySelector("#print_phone").innerHTML = `Phone: ${phone}`;
+
     document.querySelector("#print_fruit1").innerHTML = `Fruit1: ${fruits1}`;
     document.querySelector("#carb1").innerHTML = `Carbohydrates: ${fruits1Object.nutritions.carbohydrates}`;
+    // document.querySelector("#protein1").innerHTML = `Protein: ${fruits1Object.nutritions.protein}`;
+    // document.querySelector("#fat1").innerHTML = `Fat: ${fruits1Object.nutritions.fat}`;
+    // document.querySelector("#cal1").innerHTML = `Calories: ${fruits2Object.nutritions.calories}`;
+    // document.querySelector("#sugar1").innerHTML = `Sugar: ${fruits1Object.nutritions.sugar}`;
+
+
     document.querySelector("#print_fruit2").innerHTML = `Fruit2: ${fruits2}`;
     document.querySelector("#print_fruit3").innerHTML = `Fruit3: ${fruits3}`;
     document.querySelector("#print_comments").innerHTML = `Comments: ${comments}`;
