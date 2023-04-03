@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bountiful Foods</title>
-    <meta name="description" content="We specialize in organic and healthy locally grown foods.">
+    <meta name="description" content="We specialize in organic fruits and vegetables.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Prompt&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon1.ico">
@@ -22,21 +22,34 @@
             <a id="menu" href="#"></a>
             <nav>
                 <ul class="navigation">
-                    <a href="index.html"><img src="images/logo3.png" alt="logo"></a>
+                    <li><a id="display" href="index.html"><img src="images/logo3.png" alt="logo"></a></li>
                     <li><a class="active" href="index.html">Home</a></li>
                     <li><a href="fresh.html">Fresh</a></li>
                     <li><a href="about.html">About Us</a></li>
-                    <div class="social">
-                        <a href="https://facebook.com" target="_blank">
-                            <img src="images/fb.png" alt="fb icon">
-                        </a>
-                        <a href="https://linkedin.com" target="_blank">
-                            <img src="images/linkedin.png" alt="instagram icon">
-                        </a>
-                        <a href="https://twitter.com" target="_blank">
-                            <img src="images/twit.png" alt="twitter icon">
-                        </a>
-                    </div>  
+                    <li><a class="social" href="https://facebook.com" target="_blank">
+                        <img src="images/fb.png" alt="fb icon"></a></li>
+                   <li><a class="social" href="https://linkedin.com" target="_blank">
+                        <img src="images/linkedin.png" alt="instagram icon"></a></li>
+                    <li><a class="social" href="https://twitter.com" target="_blank">
+                        <img src="images/twit.png" alt="twitter icon"></a></li>
+
+                    <!-- <li><a href="index.html"><img src="images/logo3.png" alt="logo"></a></li>
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="fresh.html">Fresh</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li>
+                        <div class="social">
+                            <a href="https://facebook.com" target="_blank">
+                                <img src="images/fb.png" alt="fb icon">
+                            </a>
+                            <a href="https://linkedin.com" target="_blank">
+                                <img src="images/linkedin.png" alt="instagram icon">
+                            </a>
+                            <a href="https://twitter.com" target="_blank">
+                                <img src="images/twit.png" alt="twitter icon">
+                            </a>
+                        </div>  
+                    </li> -->
                 </ul>
                 
             </nav>
@@ -46,12 +59,7 @@
     <div id="hero">
         <img id="hero-img" src="images/ab.jpg" alt="Variety of fruits">
         <h1 class="home-title">Bountiful<br/>Foods<br/>Co.</h1>
-         <!-- <picture id="hero-img">
-            <source media="(max-width: 500px)" srcset="images/small.jpg">
-            <source media="(max-width: 1000px)" srcset="images/medium.jpg">
-            <source media="(max-width: 1600px)" srcset="images/a.jpg">
-            <img src="images/a.jpg" alt="Variety of Fruits">
-        </picture> -->
+     
     </div> 
     <main>
         <h2 class="main-title">Fresh. Healthy. Organic.</h2>
@@ -59,7 +67,7 @@
             in Southern California. Our main office is in Carlsbad but we have food trucks all over 
             the coastal area from LA to San Diego.</p>
         
-        <h2 class="fun">Fun Things To Do In Southern California</h2>
+        <h2 class="fun">Fun Things To Do In The Area</h2>
         <section class="cali-grid">
             <section class="cali-card3">
                 <h1>Los Angeles</h2>
@@ -84,35 +92,18 @@
             </section>
         </section>
 
-        <section class="drink-grid">
-            <section class="home-drink">
+        <section class="home-grid">
+            <img class="drink shadow" src="images/drinks.jpg" alt="Fruit drinks">
+            <section class="msg">
                 <h1>Make Your Own Drink!</h2>
-                <img src="images/i.jpg" alt="Fruit drinks">
-                <p>Enjoy your favorite drink by choosing the fruits you like the most! Order now and get a free fruit!</p>
+                <p>Enjoy your favorite drink by choosing three fruits you like! Order now and get a free fruit!</p>
                 <a class='create' href="fresh.html">Create Drink</a>
-            </section>
-            <div class="home-msg">
-                <!-- <img class="drink" src="images/j.jpg" alt="Fruit drinks"> -->
                 <p><span class="label">Total number of drinks submitted: </span> <span class="submissions"></span></p>
-            </div> 
-        </section>
-
-        <!-- <section class="home-grid" id="home">
-         <img class="drink" src="images/k.jpg" alt="Fruit drinks">
-            <div id="card">
-                <p id="info-drink"><span class="label">Total number of drinks submitted: </span> <span class="submissions"></span></p>
-            </div>
-            <section class="msg" id="drink-border">
-                <h1>Make Your Own Drink!</h2>
-                    <img src="images/i.jpg" alt="Fruit drinks">
-                    <p>Enjoy your favorite drink by choosing the fruits you like the most! Order now and get a free fruit!</p>
-                    <a class='create' href="fresh.html">Create Drink</a>
             </section>
-        </section>  -->
-            
+        </section>
+       
     <!-- Weather -->
         <div id="background">
-            <!-- <img class="img" src="images/d.jpg" alt="Blue Sky"> -->
             <div class="forecast">
                 <div id="weather">
                     <h3 class="weatherTitle">Weather Today in Carlsbad, California:</h1>
@@ -146,19 +137,19 @@
                 </div>
             </div>
         </div>    
-    
-
     </main>
+
+
     <footer>
         <section class="footers">
-            <img class="footerImg" src="images/logo1.png" alt="Site logo">
+            <a href="index.html"><img class="footerImg" src="images/logo1.png" alt="Site logo"></a>
             <div class="address">
                 <p class="green">Bountiful Foods Co.</p>
                 <p>70 Main St,</p>
                 <p>Carlsbad, CA 92008</p>
             </div>
             <div class="contact">
-                <p>bfc@gmail.com</p>
+                <p>info@bfc.org</p>
                 <p>(760) 123-4567</p>
                 <a class="links" href="https://www.carlsbadca.gov/">📍 Location Map</a>
                 <p>The weather is based on <a class="links" href="https://openweathermap.org/">OpenWeatherMap</a>.</p>

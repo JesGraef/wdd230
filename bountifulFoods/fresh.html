@@ -20,38 +20,33 @@
             <a id="menu" href="#"></a>
             <nav>
                 <ul class="navigation">
-                    <a href="index.html"><img src="images/logo3.png" alt="logo"></a>
+                    <li><a id="display" href="index.html"><img src="images/logo3.png" alt="logo"></a></li>
                     <li><a href="index.html">Home</a></li>
                     <li><a class="active" href="fresh.html">Fresh</a></li>
                     <li><a href="about.html">About Us</a></li>
-                    <div class="social">
-                        <a href="https://facebook.com" target="_blank">
-                            <img src="images/fb.png" alt="fb icon">
-                        </a>
-                        <a href="https://instagram.com" target="_blank">
-                            <img src="images/linkedin.png" alt="instagram icon">
-                        </a>
-                        <a href="https://twitter.com" target="_blank">
-                            <img src="images/twit.png" alt="twitter icon">
-                        </a>
-                    </div>  
+                    <li><a class="social" href="https://facebook.com" target="_blank">
+                        <img src="images/fb.png" alt="fb icon"></a></li>
+                   <li><a class="social" href="https://linkedin.com" target="_blank">
+                        <img src="images/linkedin.png" alt="instagram icon"></a></li>
+                    <li><a class="social" href="https://twitter.com" target="_blank">
+                        <img src="images/twit.png" alt="twitter icon"></a></li>
                 </ul>
-                
             </nav>
             
         </section>
     </header>
     <main>
-        <section class="home-grid">
-            <img class="drink" src="images/drinks.jpg" alt="Fruit drinks">
-            <section class="msg">
-                <h1>Customize Your Drink!</h2>
-                <p>Refresh your day by trying our customizable specialty drinks! You can choose from our vast selection of healthy and delicious organic fruits, made fresh and ready to serve! </p>
-            </section>
-        </section>
+        <section class="home-grid" id="home">
+            <img class="drink" id="drinkPic" src="images/m.jpg" alt="Fruit drinks">
+               <section class="msg padding" >
+                <h1>Customize Your Drink!</h1>
+                <p>Refresh your day by trying our customizable specialty drinks! You can choose from our vast selection of healthy and delicious organic fruits, made fresh and ready to serve! </p>    
+               </section>
+           </section> 
        
-    
           <h1 class="request">Create Your Specialty Drink!</h1>
+
+        <!-- <div id="feedback"></div> -->
         <form onsubmit="drinkSubmission(); return false;">
             <fieldset>
                 <label class="top">First Name* <input type="text" name="fname" id="name" required></label>
@@ -76,6 +71,7 @@
             </fieldset>
 
             <input type="submit" value="Create Drink" class="submitBtn">
+         
             <!-- Output Form Details -->
             <p id="print_name"></p>
             <p id="print_email"></p>
@@ -86,23 +82,19 @@
             <p id="print_fruit3"></p>
             <p id="print_comments"></p>
             <p id="print_orderDate"></p>
-
-
-            <!-- <button onclick="store()" type="button" class="submitBtn">Create Drink</button> -->
-
         </form> 
         
     </main>
     <footer>
         <section class="footers">
-            <img class="footerImg" src="images/logo1.png" alt="Site logo">
+            <a href="index.html"><img class="footerImg" src="images/logo1.png" alt="Site logo"></a>
             <div class="address">
                 <p class="green">Bountiful Foods Co.</p>
                 <p>70 Main St,</p>
                 <p>Carlsbad, CA 92008</p>
             </div>
             <div class="contact">
-                <p>bfc@gmail.com</p>
+                <p>info@bfc.org</p>
                 <p>(760) 123-4567</p>
                 <a class="links" href="https://www.carlsbadca.gov/">📍 Location Map</a>
                 <p>The weather is based on <a class="links" href="https://openweathermap.org/">OpenWeatherMap</a>.</p>

@@ -26,15 +26,15 @@ const displayFruitOptions = data => {
 
         fruitSelect1.appendChild(option1);
         fruitSelect2.appendChild(option2);
-        fruitSelect3.appendChild(option3);  
-        
-       
+        fruitSelect3.appendChild(option3);    
     })  
 }
 
 // Hidden element on Join Page
 const today = new Date();
 document.querySelector('#dateTime').value = today;
+
+// console.log(JSON.parse(fruits)[fruits1.nutritions.carbohydrates]);
 
 
 //Display Input
@@ -43,7 +43,9 @@ function drinkSubmission() {
     const email = document.querySelector("#email").value;
     const phone = document.querySelector("#phone").value;
     const fruits1 = document.querySelector("#fruits1").value;
-    // const carb1 = fruits[fruits1.nutritions.carbohydrates];
+
+    const fruits1Object = fruits.find(item => item.name === fruits1); console.log('fruits1Object', fruits, fruits1, fruits1Object, fruits1Object.nutritions.carbohydrates)
+
     const fruits2 = document.querySelector("#fruits2").value;
     const fruits3 = document.querySelector("#fruits3").value;
     const comments = document.querySelector("#comments").value;
@@ -52,7 +54,7 @@ function drinkSubmission() {
     document.querySelector("#print_email").innerHTML = `Email: ${email}`;
     document.querySelector("#print_phone").innerHTML = `Phone: ${phone}`;
     document.querySelector("#print_fruit1").innerHTML = `Fruit1: ${fruits1}`;
-    // document.querySelector("#carb1").innerHTML = `Carbohydrates: ${fruits[fruits1.nutritions.carbohydrates]}`;
+    document.querySelector("#carb1").innerHTML = `Carbohydrates: ${fruits1Object.nutritions.carbohydrates}`;
     document.querySelector("#print_fruit2").innerHTML = `Fruit2: ${fruits2}`;
     document.querySelector("#print_fruit3").innerHTML = `Fruit3: ${fruits3}`;
     document.querySelector("#print_comments").innerHTML = `Comments: ${comments}`;
@@ -64,5 +66,21 @@ function drinkSubmission() {
 
 }
 
-// console.log(JSON.parse(fruits)[fruits1.nutritions.carbohydrates]);
+
+// // get the feedback div element so we can do something with it.
+// const feedbackElement = document.getElementById('feedback');
+// // get the form so we can read what was entered in it.
+// const formElement = document.forms[0];
+// // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+// formElement.addEventListener('submit', function(e) {
+//     // stop the form from doing the default action.
+//     e.preventDefault();
+//     // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+//     feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+//     // make the feedback element visible.
+//     feedbackElement.style.display = "block";
+//     // add a class to move everything down so our message doesn't cover it.
+//     document.body.classList.toggle('moveDown');
+// });
+
 
