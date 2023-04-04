@@ -42,7 +42,7 @@ async function apiFetchWeather() {
   
   }
   
-  const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+  const weekday = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
   function displayForecastResults(data) {
     const forecast = data.list.filter(({dt_txt}) => dt_txt.split(" ")[1] === "06:00:00");
     console.log('forecast', forecast)
